@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sostener-nos es la primera comunidad de acompañamiento emocional y formación progresiva para personas neurodivergentes y las familias que las acompañan. Un espacio humano, neuroafirmativo y libre de juicios.">
+    <meta name="keywords" content="autismo, TDAH, neurodivergencia, acompañamiento emocional, familias neurodivergentes, apoyo mutuo, salud mental parental">
+    <meta name="author" content="Luz Ayda Marín & Mauricio Martínez">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sostener-nos.com/">
+    <meta property="og:title" content="Sostener-nos | Comunidad de Acompañamiento Emocional para Familias Neurodivergentes">
+    <meta property="og:description" content="Un espacio donde ya no tienes que sostener todo esto solo. Membresía de acompañamiento y formación guiada en vivo por Luz Ayda Marín y Mauricio Martínez.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sostener-nos.com/">
+    <meta property="twitter:title" content="Sostener-nos | Comunidad de Acompañamiento Emocional para Familias Neurodivergentes">
+    <meta property="twitter:description" content="Un espacio donde ya no tienes que sostener todo esto solo. Membresía de acompañamiento y formación guiada en vivo.">
+    <meta property="twitter:image" content="assets/logo.png">
+
+    <title>Sostener-nos | Acompañamiento Emocional para Familias Neurodivergentes</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Decorative Organic Background SVGs -->
+    <div class="organic-bg-shapes" aria-hidden="true">
+        <div class="shape-blob shape-blob-1"></div>
+        <div class="shape-blob shape-blob-2"></div>
+        <div class="shape-blob shape-blob-3"></div>
+        <div class="shape-leaf shape-leaf-left">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,90 Q30,60 50,50 Q70,40 90,10" stroke="var(--color-sage)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <path d="M50,50 Q45,30 35,25 Q30,35 50,50 Z" fill="var(--color-sage-light)" opacity="0.4"/>
+                <path d="M30,65 Q20,50 15,48 Q12,58 30,65 Z" fill="var(--color-sage-light)" opacity="0.3"/>
+                <path d="M70,30 Q65,15 55,10 Q50,20 70,30 Z" fill="var(--color-sage-light)" opacity="0.4"/>
+            </svg>
+        </div>
+        <div class="shape-leaf shape-leaf-right">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M90,90 Q70,60 50,50 Q30,40 10,10" stroke="var(--color-terracotta)" stroke-width="1" opacity="0.3"/>
+                <path d="M50,50 Q55,30 65,25 Q70,35 50,50 Z" fill="var(--color-beige)" opacity="0.4"/>
+                <path d="M30,30 Q35,15 45,10 Q50,20 30,30 Z" fill="var(--color-lavender-light)" opacity="0.4"/>
+            </svg>
+        </div>
+    </div>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container text-center">
+                <!-- Branding Container -->
+                <div class="brand-container fade-in">
+                    <img src="assets/logo.png" alt="Sostener-nos - Comunidad de Apoyo para Familias Neurodivergentes" class="hero-brand-img">
+                </div>
+
+                <!-- Highlight quote -->
+                <p class="hero-tagline fade-in delay-1">Un espacio donde ya no tienes que sostener todo esto solo.</p>
+                
+                <h1 class="hero-main-title fade-in delay-2">
+                    La primera comunidad de acompañamiento emocional para familias neurodivergentes
+                </h1>
+
+                <!-- Hero Pilar Badges -->
+                <div class="hero-pilars fade-in delay-3" aria-label="Pilares de la comunidad">
+                    <div class="pilar-badge pilar-lavender">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <span class="pilar-label">Comprender</span>
+                    </div>
+                    <div class="pilar-badge pilar-sage">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 8C17 5.79 15.21 4 13 4S9 5.79 9 8 10.79 12 13 12 17 10.21 17 8M13 14C10.33 14 5 15.34 5 18V20H21V18C21 15.34 15.67 14 13 14Z"/></svg>
+                        </div>
+                        <span class="pilar-label">Acompañar</span>
+                    </div>
+                    <div class="pilar-badge pilar-terracotta">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
+                        <span class="pilar-label">Comunidad</span>
+                    </div>
+                    <div class="pilar-badge pilar-beige">
+                        <div class="pilar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 6.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                        </div>
+                        <span class="pilar-label">Esperanza</span>
+                    </div>
+                </div>
+
+                <!-- Emotional Intro Copy -->
+                <div class="hero-intro-text text-left max-w-700 fade-in delay-4">
+                    <p>Hay familias que viven el autismo y el TDAH intentando mantenerse fuertes todo el tiempo.</p>
+                    <p>Por fuera siguen funcionando.</p>
+                    <p class="highlight-lead">Pero por dentro viven agotadas.</p>
+                    
+                    <div class="exhaustion-list card-organic">
+                        <h3 class="exhaustion-list-title">Agotadas de:</h3>
+                        <ul>
+                            <li><span>sostener emocionalmente a todos,</span></li>
+                            <li><span>buscar respuestas constantemente,</span></li>
+                            <li><span>sentir culpa por cansarse,</span></li>
+                            <li><span>explicar una y otra vez lo que viven,</span></li>
+                            <li><span>y atravesar este proceso sintiéndose profundamente solas.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hero-narrative text-left max-w-700 fade-in delay-5">
+                    <p><strong>Sostener-nos nació para cambiar eso.</strong></p>
+                    <p>No somos solamente una comunidad sobre neurodivergencia. Somos un espacio humano de acompañamiento, comprensión y sostén emocional para personas neurodivergentes y las familias que las acompañan.</p>
+                    <p class="highlight-handwritten-block text-center">"Aquí no solo hablamos del diagnóstico.<br>También hablamos de quien lo sostiene todos los días."</p>
+                </div>
+
+                <div class="hero-cta-group fade-in delay-5">
+                    <a href="#oferta" class="btn btn-large btn-terracotta pulse-animation" id="hero-cta-btn">Quiero formar parte de Sostener-nos</a>
+                    <span class="btn-subtext">Acceso fundador vitalicio • Primera generación</span>
+                </div>
+            </div>
+            
+            <div class="organic-divider">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,64 C280,120 560,30 840,64 C1120,98 1280,15 1440,32 L1440,120 L0,120 Z" fill="var(--color-arena-light)"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Section: "Tal vez hoy te sientes así..." -->
+        <section class="sentir-section" id="sentir">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Conexión y Empatía</span>
+                    <h2 class="section-title">Tal vez hoy te sientes así…</h2>
+                    <p class="section-desc max-w-600">Cada etapa del camino de la neurodivergencia trae consigo cargas únicas. Identifica en qué momento te encuentras hoy.</p>
+                </div>
+
+                <!-- 3 Columns Layout for the stages -->
+                <div class="sentir-cards-grid">
+                    
+                    <!-- Stage 1 -->
+                    <div class="sentir-card card-stage-1 hover-lift scroll-animate">
+                        <div class="card-stage-badge color-lavender">Etapa de Inicio</div>
+                        <h3 class="card-stage-title">Si apenas estás comenzando este camino…</h3>
+                        <p class="card-stage-intro">Tal vez sientes:</p>
+                        <ul class="feelings-list">
+                            <li>miedo,</li>
+                            <li>confusión,</li>
+                            <li>ansiedad,</li>
+                            <li>sobrecarga de información,</li>
+                            <li>y una necesidad desesperada de entender qué hacer.</li>
+                        </ul>
+                        <div class="card-stage-details">
+                            <p>Quizá pasas horas buscando respuestas.</p>
+                            <p>Quizá tienes miedo del futuro.</p>
+                            <p>Quizá sientes que nadie realmente comprende lo que estás viviendo.</p>
+                            <p class="card-highlight-emotional">Y aunque intentas mantenerte fuerte… por dentro te sientes emocionalmente desbordado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <div class="sentir-card card-stage-2 hover-lift scroll-animate">
+                        <div class="card-stage-badge color-sage">Etapa Intermedia</div>
+                        <h3 class="card-stage-title">Si ya llevas tiempo transitando este proceso…</h3>
+                        <p class="card-stage-intro">Tal vez ya aprendiste muchísimo sobre autismo o TDAH. Pero aun así:</p>
+                        <ul class="feelings-list">
+                            <li>sigues cansado,</li>
+                            <li>sosteniendo todo,</li>
+                            <li>viviendo en alerta constante,</li>
+                            <li>postergándote,</li>
+                            <li>y sintiendo que nadie pregunta cómo estás tú.</li>
+                        </ul>
+                        <div class="card-stage-details">
+                            <p class="card-highlight-emotional highlighted-quote-card">"Porque muchas veces el problema no es solamente entender el diagnóstico. Es sostener emocionalmente la vida completa después de él."</p>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3 -->
+                    <div class="sentir-card card-stage-3 hover-lift scroll-animate">
+                        <div class="card-stage-badge color-terracotta">Etapa Avanzada</div>
+                        <h3 class="card-stage-title">Y si llevas años recorriendo este camino…</h3>
+                        <p class="card-stage-intro">Tal vez ya desarrollaste herramientas. Tal vez aprendiste a adaptarte. Tal vez incluso ayudas a otras familias.</p>
+                        <p class="card-stage-intro">Pero en silencio:</p>
+                        <ul class="feelings-list">
+                            <li>también necesitas sostén.</li>
+                        </ul>
+                        <div class="card-stage-details">
+                            <p>Porque no quieres vivir sobreviviendo para siempre.</p>
+                            <p class="card-highlight-emotional">Quieres volver a construir bienestar, calma y una vida emocionalmente sostenible.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Brand Promise CTA Box -->
+                <div class="brand-promise-block scroll-animate text-center">
+                    <div class="promise-decor-heart">♥</div>
+                    <blockquote class="brand-promise-quote">
+                        “No prometemos soluciones mágicas.<br>Prometemos caminar a tu lado, con humanidad, criterio y presencia.”
+                    </blockquote>
+                    <cite class="brand-promise-author">— Luz Ayda Marín y Mauricio Martínez</cite>
+                    
+                    <div class="promise-cta">
+                        <a href="#oferta" class="btn btn-medium btn-terracotta" id="promise-cta-btn">Quiero transitar este camino acompañado</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: "Sostener-nos es para ti si..." -->
+        <section class="es-para-ti-section" id="es-para-ti">
+            <div class="container">
+                <div class="es-para-ti-wrapper">
+                    <div class="es-para-ti-content scroll-animate">
+                        <span class="section-subtitle">¿Es para ti?</span>
+                        <h2 class="section-title">Sostener-nos es para ti si…</h2>
+                        <p class="section-desc">Si resuenas con alguna de estas afirmaciones, has encontrado tu refugio emocional.</p>
+                        
+                        <ul class="para-ti-grid-list">
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Necesitas sentirte acompañado y comprendido.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Quieres aprender sobre neurodivergencia desde una mirada humana y neuroafirmativa.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Estás agotado de sostener todo solo.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Buscas una comunidad donde no tengas que explicarlo todo.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Deseas herramientas prácticas sin sentirte juzgado.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Necesitas espacios seguros para hablar de lo que realmente estás viviendo.</p>
+                            </li>
+                            <li>
+                                <div class="list-check-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <p class="para-ti-text">Quieres acompañar mejor sin perderte emocionalmente en el proceso.</p>
+                            </li>
+                        </ul>
+                        
+                        <div class="para-ti-cta">
+                            <a href="#oferta" class="btn btn-medium btn-carbon">Sí, me identifico. Quiero unirme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="es-para-ti-illustration scroll-animate">
+                        <!-- Custom Organic Visual representation of support -->
+                        <div class="organic-art-box">
+                            <div class="art-circle circle-1"></div>
+                            <div class="art-circle circle-2"></div>
+                            <div class="art-circle circle-3"></div>
+                            <div class="art-line-drawing">
+                                <img src="assets/favicon.png" alt="Sostener-nos Isotipo" class="art-logo-element">
+                            </div>
+                            <p class="art-quote">"Un espacio sin juicio, lleno de validación y pertenencia."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: "¿Qué es Sostener-nos?" -->
+        <section class="que-es-section" id="que-es">
+            <div class="container max-w-900">
+                <div class="que-es-card card-organic-large scroll-animate">
+                    <span class="section-subtitle">Nuestra Propuesta</span>
+                    <h2 class="section-title text-left">¿Qué es Sostener-nos?</h2>
+                    
+                    <div class="que-es-text">
+                        <p class="lead-text">
+                            <strong>Sostener-nos</strong> es una membresía de acompañamiento emocional y formación progresiva para personas neurodivergentes y sus familias.
+                        </p>
+                        <p>
+                            Un espacio creado por <strong>Luz Ayda Marín</strong> y <strong>Mauricio Martínez</strong> para acompañar el proceso neurodivergente desde la comprensión, la regulación, la humanidad, la comunidad y el sostén emocional real.
+                        </p>
+                        <p class="highlight-text-center">
+                            "Aquí no buscamos perfección.<br>Buscamos que las familias puedan vivir este proceso con más calma, claridad y menos soledad."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- "Una experiencia viva y acompañada" Callout -->
+                <div class="experiencia-viva-block scroll-animate">
+                    <div class="badge-viva-live">
+                        <span class="live-dot"></span>
+                        CONSTRUCCIÓN VIVA • EN VIVO Y GUIADA
+                    </div>
+                    
+                    <h3 class="viva-title">Una experiencia viva y acompañada</h3>
+                    
+                    <div class="viva-importance-notice">
+                        <p class="notice-badge">IMPORTANTE</p>
+                        <p class="notice-desc">Esta primera generación de Sostener-nos se desarrollará en modalidad guiada y en vivo.</p>
+                    </div>
+
+                    <p class="viva-details">
+                        Eso significa que durante los próximos meses iremos construyendo progresivamente cada módulo junto a la comunidad mediante:
+                    </p>
+
+                    <div class="viva-elements-grid">
+                        <div class="viva-element">
+                            <span class="viva-el-num">01</span>
+                            <h4 class="viva-el-title">Sesiones online en vivo</h4>
+                        </div>
+                        <div class="viva-element">
+                            <span class="viva-el-num">02</span>
+                            <h4 class="viva-el-title">Encuentros de acompañamiento</h4>
+                        </div>
+                        <div class="viva-element">
+                            <span class="viva-el-num">03</span>
+                            <h4 class="viva-el-title">Preguntas y respuestas</h4>
+                        </div>
+                        <div class="viva-element">
+                            <span class="viva-el-num">04</span>
+                            <h4 class="viva-el-title">Análisis de casos</h4>
+                        </div>
+                        <div class="viva-element">
+                            <span class="viva-el-num">05</span>
+                            <h4 class="viva-el-title">Conversaciones profundas</h4>
+                        </div>
+                        <div class="viva-element">
+                            <span class="viva-el-num">06</span>
+                            <h4 class="viva-el-title">Espacios de sostén emocional</h4>
+                        </div>
+                    </div>
+                    
+                    <p class="viva-recording-note">
+                        * Cada encuentro quedará grabado dentro de la plataforma para consumo posterior.
+                    </p>
+
+                    <div class="viva-philosophy card-organic">
+                        <h4>¿Por qué elegimos este formato?</h4>
+                        <p>Porque creemos que las familias neurodivergentes no necesitan solamente más información para consumir solas.</p>
+                        <p>Necesitan espacios humanos donde puedan sentirse comprendidas, acompañadas, escuchadas y sostenidas mientras transitan este camino.</p>
+                        <p class="viva-bold-conclusion">Por eso Sostener-nos no nace como un curso frío y completamente pregrabado. Nace como una experiencia viva, cercana y profundamente humana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: "Lo que vas a encontrar dentro" (Módulos & Estructura) -->
+        <section class="modulos-section" id="modulos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">El Programa</span>
+                    <h2 class="section-title">Lo que vas a encontrar dentro de la comunidad</h2>
+                    <p class="section-desc max-w-700">Un ecosistema de soporte progresivo que integra formación aplicada, acompañamiento humano directo y comunidad activa.</p>
+                </div>
+
+                <!-- Ecosistema Grid -->
+                <div class="ecosistema-grid scroll-animate">
+                    <div class="eco-item block-1">
+                        <div class="eco-num">1</div>
+                        <h3 class="eco-title">Formación progresiva y acompañada</h3>
+                        <p class="eco-desc">A lo largo de la experiencia iremos desarrollando los distintos módulos temáticos de la comunidad. Cada uno diseñado para ayudar a las familias a comprender y transitar la neurodivergencia con más claridad y menos agotamiento emocional.</p>
+                    </div>
+                    <div class="eco-item block-2">
+                        <div class="eco-num">2</div>
+                        <h3 class="eco-title">Sesiones online en vivo</h3>
+                        <p class="eco-desc">Tendrás encuentros acompañados donde podremos profundizar temas, resolver dudas, trabajar situaciones reales y conversar desde la experiencia humana.</p>
+                    </div>
+                    <div class="eco-item block-3">
+                        <div class="eco-num">3</div>
+                        <h3 class="eco-title">Espacios mensuales de P&R</h3>
+                        <p class="eco-desc">Un espacio seguro donde puedas expresar dudas, compartir experiencias, recibir orientación y sentirte acompañado.</p>
+                    </div>
+                    <div class="eco-item block-4">
+                        <div class="eco-num">4</div>
+                        <h3 class="eco-title">Casos de estudio y análisis</h3>
+                        <p class="eco-desc">Porque muchas veces escuchar otras experiencias también ayuda a comprender y ordenar lo que vivimos en el día a día.</p>
+                    </div>
+                    <div class="eco-item block-5">
+                        <div class="eco-num">5</div>
+                        <h3 class="eco-title">Comunidad privada</h3>
+                        <p class="eco-desc">Un espacio donde no tengas que justificar constantemente lo que sientes. Donde puedas encontrar comprensión, humanidad, validación y pertenencia.</p>
+                    </div>
+                </div>
+
+                <!-- Interactive Modules Accordion -->
+                <div class="modulos-accordion-wrapper scroll-animate">
+                    <h3 class="accordion-main-title text-center">Módulos Temáticos de la Formación</h3>
+                    <p class="accordion-subtitle text-center">Haz clic en cada módulo para desplegar su contenido temático:</p>
+
+                    <div class="accordion" id="modulesAccordion">
+                        
+                        <!-- Module 1 -->
+                        <div class="accordion-item item-terracotta">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod1-content">
+                                <span class="accordion-num">MÓDULO 1</span>
+                                <span class="accordion-title">Cambiar la mirada: comprender la neurodivergencia</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod1-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Qué es la neurodivergencia</li>
+                                        <li>Diferencias de procesamiento</li>
+                                        <li>Perfiles neurodivergentes</li>
+                                        <li>Camuflaje y sobreadaptación</li>
+                                        <li>Lecturas erróneas frecuentes</li>
+                                        <li>Comprender más allá del déficit</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Porque muchas veces lo que parecía confuso… empieza a tener sentido.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 2 -->
+                        <div class="accordion-item item-lavender">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod2-content">
+                                <span class="accordion-num">MÓDULO 2</span>
+                                <span class="accordion-title">Dar sentido a lo que se siente: transitar el proceso como familia</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod2-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Impacto emocional del diagnóstico</li>
+                                        <li>Miedo, culpa e incertidumbre</li>
+                                        <li>Duelo y reorganización familiar</li>
+                                        <li>Identidad parental</li>
+                                        <li>Aceptación y sostén emocional</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Porque las emociones también necesitan un lugar seguro.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 3 -->
+                        <div class="accordion-item item-sage">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod3-content">
+                                <span class="accordion-num">MÓDULO 3</span>
+                                <span class="accordion-title">Entender la conducta: leer lo que hay detrás</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod3-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Conducta como expresión de necesidades</li>
+                                        <li>Sobrecarga y desregulación</li>
+                                        <li>Ajustes en demandas</li>
+                                        <li>Evitación como regulación</li>
+                                        <li>Comprender el contexto emocional</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Porque detrás de muchas conductas hay necesidades que necesitan ser comprendidas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 4 -->
+                        <div class="accordion-item item-beige">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod4-content">
+                                <span class="accordion-num">MÓDULO 4</span>
+                                <span class="accordion-title">Ajustar sin forzar: regulación y acompañamiento respetuoso</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod4-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Regulación y corregulación emocional</li>
+                                        <li>Tipos de crisis</li>
+                                        <li>Cómo intervenir sin escalar</li>
+                                        <li>Anticipación y estructura</li>
+                                        <li>Ajustes respetuosos</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Para construir más calma y previsibilidad dentro de la vida cotidiana.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 5 -->
+                        <div class="accordion-item item-terracotta">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod5-content">
+                                <span class="accordion-num">MÓDULO 5</span>
+                                <span class="accordion-title">Traducir al entorno: colegio, trabajo, familia y otros adultos</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod5-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Cómo explicar el perfil a otros</li>
+                                        <li>Adaptaciones razonables</li>
+                                        <li>Comunicación sin confrontación</li>
+                                        <li>Límites saludables</li>
+                                        <li>Relación con instituciones</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Porque acompañar también implica aprender a proteger y traducir necesidades.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 6 -->
+                        <div class="accordion-item item-carbon">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="mod6-content">
+                                <span class="accordion-num">MÓDULO 6</span>
+                                <span class="accordion-title">Sostener(se) en el tiempo</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content" id="mod6-content" aria-hidden="true">
+                                <div class="accordion-body">
+                                    <ul class="mod-topics-list">
+                                        <li>Burnout del cuidador</li>
+                                        <li>Sobrecarga emocional</li>
+                                        <li>Relación de pareja y familia</li>
+                                        <li>Sexualidad, autonomía y futuro</li>
+                                        <li>Construcción de redes de apoyo</li>
+                                    </ul>
+                                    <p class="mod-conclusion">Porque sostener a otros también requiere ser sostenido.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modulos-cta text-center scroll-animate">
+                    <a href="#oferta" class="btn btn-large btn-terracotta pulse-animation">Quiero Acceder a Todos los Módulos</a>
+                    <p class="btn-subtext">Un pago único vitalicio • Acceso ilimitado de por vida</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: "Creadores de la Comunidad" -->
+        <section class="creadores-section" id="creadores">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">¿Quiénes somos?</span>
+                    <h2 class="section-title">Esta comunidad fue creada por</h2>
+                    <p class="section-desc max-w-600">Dos profesionales unidos por la convicción de que las familias neurodivergentes merecen espacios seguros y acompañamiento sin juicios.</p>
+                </div>
+
+                <div class="creadores-grid">
+                    
+                    <!-- Creator 1: Luz Ayda Marín -->
+                    <div class="creador-card scroll-animate">
+                        <div class="creador-image-wrapper">
+                            <!-- Custom Stylized SVG Portrait / Decorative Placeholder with absolute elegance -->
+                            <div class="creador-avatar-decor bg-lavender-accent">
+                                <svg viewBox="0 0 200 200" fill="none" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clip-avatar-luz">
+                                            <path d="M20,100 C20,40 40,20 100,20 C160,20 180,40 180,100 C180,160 160,180 100,180 C40,180 20,160 20,100 Z" />
+                                        </clipPath>
+                                    </defs>
+                                    <!-- Warm decorative circles -->
+                                    <circle cx="100" cy="100" r="80" fill="var(--color-beige-light)" />
+                                    <!-- Head Silhouette Art -->
+                                    <g clip-path="url(#clip-avatar-luz)">
+                                        <path d="M100,75 C118,75 130,60 130,42 C130,24 118,20 100,20 C82,20 70,24 70,42 C70,60 82,75 100,75 Z" fill="var(--color-terracotta)" />
+                                        <path d="M100,85 C65,85 45,110 45,150 L155,150 C155,110 135,85 100,85 Z" fill="var(--color-carbon)" opacity="0.8" />
+                                        <path d="M100,70 L100,95" stroke="var(--color-beige)" stroke-width="3" />
+                                        <!-- Leaf overlay -->
+                                        <path d="M130,90 Q150,110 140,130" stroke="var(--color-sage)" stroke-width="2" fill="none"/>
+                                    </g>
+                                </svg>
+                                <span class="creador-role-badge">Co-Creadora</span>
+                            </div>
+                        </div>
+                        
+                        <div class="creador-info">
+                            <h3 class="creador-name">Luz Ayda Marín</h3>
+                            <p class="creador-title">Psicóloga y neuropsicóloga clínica especializada en neurodivergencia.</p>
+                            
+                            <div class="creador-bio-details">
+                                <h4>Con experiencia en:</h4>
+                                <ul>
+                                    <li>Evaluación diagnóstica</li>
+                                    <li>Acompañamiento psicológico</li>
+                                    <li>Autismo y TDAH</li>
+                                    <li>Neurodivergencia en adultos</li>
+                                    <li>Acompañamiento terapéutico desde una mirada respetuosa y neuroafirmativa.</li>
+                                </ul>
+                            </div>
+                            
+                            <blockquote class="creador-quote">
+                                "Las personas neurodivergentes y sus familias necesitan redes de apoyo humanas, compasivas y sostenidas."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Creator 2: Mauricio Martínez -->
+                    <div class="creador-card scroll-animate">
+                        <div class="creador-image-wrapper">
+                            <div class="creador-avatar-decor bg-sage-accent">
+                                <svg viewBox="0 0 200 200" fill="none" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clip-avatar-mau">
+                                            <path d="M20,100 C20,40 40,20 100,20 C160,20 180,40 180,100 C180,160 160,180 100,180 C40,180 20,160 20,100 Z" />
+                                        </clipPath>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="80" fill="var(--color-arena)" />
+                                    <g clip-path="url(#clip-avatar-mau)">
+                                        <path d="M100,75 C118,75 130,60 130,42 C130,24 118,20 100,20 C82,20 70,24 70,42 C70,60 82,75 100,75 Z" fill="var(--color-lavender)" />
+                                        <path d="M100,85 C65,85 45,110 45,150 L155,150 C155,110 135,85 100,85 Z" fill="var(--color-carbon)" opacity="0.8" />
+                                        <path d="M100,70 L100,95" stroke="var(--color-beige)" stroke-width="3" />
+                                        <!-- Leaf overlay -->
+                                        <path d="M60,110 Q40,90 50,70" stroke="var(--color-terracotta)" stroke-width="2" fill="none"/>
+                                    </g>
+                                </svg>
+                                <span class="creador-role-badge">Co-Creador</span>
+                            </div>
+                        </div>
+                        
+                        <div class="creador-info">
+                            <h3 class="creador-name">Mauricio Martínez</h3>
+                            <p class="creador-title">Psicólogo, estratega digital y constructor de comunidades humanas.</p>
+                            
+                            <div class="creador-bio-details">
+                                <h4>Acompaña especialmente:</h4>
+                                <ul>
+                                    <li>Los espacios de contención emocional</li>
+                                    <li>La construcción de comunidad</li>
+                                    <li>Los procesos de transformación emocional</li>
+                                    <li>La creación de entornos donde las familias puedan sentirse vistas y acompañadas.</li>
+                                </ul>
+                            </div>
+                            
+                            <blockquote class="creador-quote">
+                                "Muchas veces las personas no necesitan más exigencia. Necesitan espacios seguros donde puedan respirar un poco."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: "Generación Fundadora / Oferta" -->
+        <section class="oferta-section" id="oferta">
+            <div class="container max-w-1000">
+                <div class="offer-card scroll-animate">
+                    <!-- Leaf graphics background on card corners -->
+                    <div class="offer-card-decor"></div>
+                    
+                    <div class="offer-header text-center">
+                        <span class="offer-pre-badge">ETAPA DE LANZAMIENTO</span>
+                        <h2 class="offer-title">ÚNETE A LA GENERACIÓN FUNDADORA DE SOSTENER-NOS</h2>
+                        <p class="offer-subtitle">Empieza a transitar el autismo y el TDAH con más comprensión, calma y sostén emocional.</p>
+                    </div>
+
+                    <div class="offer-grid">
+                        
+                        <!-- Offer Details Left -->
+                        <div class="offer-details">
+                            <h3>Como miembro fundador recibirás:</h3>
+                            <ul class="offer-features-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Acceso preferencial</strong> a la comunidad completa.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Participación activa</strong> en la construcción viva del programa.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Acceso progresivo</strong> a todos los módulos desarrollados durante tu permanencia.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Grabaciones completas</strong> de las sesiones en vivo dentro de la plataforma.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Acompañamiento más personalizado</strong> y cercano con Luz y Mauricio.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Precio fundador especial</strong> de pago único e irrepetible.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="list-bullet-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Acceso prioritario</strong> a futuras mejoras y expansión del programa.</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="exclusive-generation-info card-organic">
+                                <h4>¿Por qué abrimos esta posibilidad solo ahora?</h4>
+                                <p>Porque esta primera generación tendrá algo que las siguientes no tendrán: cercanía directa en la construcción, participación activa en el programa, condiciones irrepetibles y un pase vitalicio exclusivo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Price Card Right -->
+                        <div class="price-box-wrapper">
+                            <div class="price-box text-center">
+                                <span class="price-tag-badge">MEMBRESÍA EXCLUSIVA</span>
+                                <h3 class="price-box-title">ACCESO FUNDADOR VITALICIO</h3>
+                                <p class="price-generation-sub">Primera Generación Sostener-nos</p>
+                                
+                                <hr class="price-separator">
+
+                                <div class="price-amount-container">
+                                    <span class="price-currency">USD</span>
+                                    <span class="price-val">347</span>
+                                </div>
+                                <p class="price-term">UN ÚNICO PAGO PARA SIEMPRE</p>
+                                <p class="price-savings">Sin mensualidades • Sin renovaciones ocultas</p>
+
+                                <hr class="price-separator">
+
+                                <a href="https://pay.hotmart.com/xxxxxx" target="_blank" rel="noopener noreferrer" class="btn btn-large btn-terracotta btn-block pulse-animation offer-main-btn" id="checkout-cta-btn">
+                                    QUIERO FORMAR PARTE DE SOSTENER-NOS
+                                </a>
+
+                                <p class="price-urgency-notice">
+                                    <strong>¡Atención!</strong> En futuras etapas, Sostener-nos funcionará bajo membresía mensual, semestral o anual. A medida que la comunidad crezca, el acceso fundador desaparecerá y el valor aumentará.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lifetime terms detailed points -->
+                    <div class="offer-terms-summary scroll-animate">
+                        <h4>Tu pase vitalicio de un único pago incluye acceso permanente a:</h4>
+                        <div class="terms-grid">
+                            <div class="term-item">• Todos los módulos actuales y futuros</div>
+                            <div class="term-item">• Grabaciones de sesiones en vivo</div>
+                            <div class="term-item">• Nuevas formaciones y expansiones</div>
+                            <div class="term-item">• Recursos y contenidos futuros</div>
+                            <div class="term-item">• Actualizaciones continuas</div>
+                            <div class="term-item">• Espacios especiales para miembros fundadores</div>
+                            <div class="term-item">• Y una comunidad donde no tendrás que seguir sosteniendo todo solo</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final message / Closing thought -->
+                <div class="final-emotional-closure text-center scroll-animate">
+                    <h3 class="closure-title">LO MÁS IMPORTANTE</h3>
+                    <p class="closure-text">Sostener-nos no busca que hagas todo perfecto. Busca que puedas vivir este proceso con más calma, más comprensión, más humanidad y menos soledad.</p>
+                    <p class="closure-handwritten">"Porque no deberías sostener todo esto solo."</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container text-center">
+            <div class="footer-branding">
+                <a href="#hero" class="footer-logo-link">
+                    <img src="assets/favicon.png" alt="Sostener-nos Isotipo" class="footer-favicon">
+                    <span class="brand-name-serif">Sostener-<span class="brand-name-handwritten">nos</span></span>
+                </a>
+                <p class="footer-tagline">Comunidad de apoyo y acompañamiento emocional para familias neurodivergentes</p>
+            </div>
+            
+            <div class="footer-phrase-block">
+                <p class="footer-phrase">“Comprender. Acompañar. Sostener.”</p>
+                <p class="footer-subphrase">Un espacio para comprender, acompañar y transitar juntos.</p>
+            </div>
+            
+            <hr class="footer-separator">
+            
+            <div class="footer-bottom-meta">
+                <p class="copyright">&copy; 2026 Sostener-nos. Todos los derechos reservados. Creado por Luz Ayda Marín y Mauricio Martínez.</p>
+                <p class="disclaimer">Esta comunidad ofrece acompañamiento psicoeducativo y contención emocional parental, no sustituye evaluación diagnóstica ni psicoterapia individual formal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script file -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "landing-sostener-nos",
+  "version": "1.0.0",
+  "description": "Landing page profesional para la comunidad Sostener-nos",
+  "main": "index.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html, *.css, *.js, assets/*\" --port 3000 --no-notify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  },
+  "author": "Luz Ayda Marín & Mauricio Martínez",
+  "license": "ISC"
+}
