@@ -94,8 +94,51 @@ document.addEventListener('DOMContentLoaded', () => {
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', (e) => {
             // Keep hotmart link behavior, but log click or trigger feedback if needed
-            // For now, let it proceed to payment, but we can log user interest
             console.log('Miembro fundador haciendo clic en botón de pago vitalicio Sostener-nos');
         });
     }
+
+    // ==========================================================================
+    // 6. CUSTOM SMOOTH SCROLLING WITH CUBIC BEZIER EASING
+    // ==========================================================================
+    const internalLinks = document.querySelectorAll('a[href^="#"]');
+    
+    internalLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                const duration = 900; // Duration in milliseconds
+                let start = null;
+                
+                // Cubic Bezier Ease In Out Easing Function
+                function easeInOutCubic(t, b, c, d) {
+                    t /= d/2;
+                    if (t < 1) return c/2*t*t*t + b;
+                    t -= 2;
+                    return c/2*(t*t*t + 2) + b;
+                }
+                
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+                    const scrollY = easeInOutCubic(progress, startPosition, distance, duration);
+                    window.scrollTo(0, scrollY);
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        window.scrollTo(0, targetPosition); // Precise fallback landing
+                    }
+                }
+                
+                window.requestAnimationFrame(step);
+            }
+        });
+    });
 });
