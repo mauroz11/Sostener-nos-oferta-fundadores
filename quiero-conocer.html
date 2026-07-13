@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="No deberías sostener todo esto solo. Descubre la comunidad de apoyo emocional y formación para personas neurodivergentes y sus familias.">
+    <title>Quiero conocer Sostener-nos - Registro</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Specific Landing de Registro Styles -->
+    <style>
+        .reg-landing-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: var(--color-bg-warm);
+        }
+        .reg-landing-header {
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+        .reg-landing-logo {
+            max-width: 240px;
+            height: auto;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+        }
+        .reg-landing-welcome-title {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--color-carbon);
+            line-height: 1.2;
+            font-family: var(--font-title);
+            font-weight: 400;
+        }
+        .reg-landing-welcome-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--color-carbon-light);
+            max-width: 650px;
+            margin: 0 auto 2.5rem auto;
+            line-height: 1.5;
+        }
+        .reg-landing-top-cta {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .reg-landing-top-btn {
+            font-weight: 700;
+            padding: 1.1rem 2.5rem;
+            box-shadow: 0 4px 15px rgba(194, 122, 90, 0.25);
+            max-width: 480px;
+            width: 100%;
+        }
+        .reg-landing-copy-block {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--color-carbon-light);
+            margin-bottom: 4rem;
+        }
+        .reg-landing-copy-block p {
+            margin-bottom: 1.5rem;
+        }
+        .reg-landing-copy-block p:last-child {
+            margin-bottom: 0;
+        }
+        .reg-landing-copy-block strong {
+            color: var(--color-carbon);
+        }
+        .reg-landing-features-box {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-organic-1);
+            padding: 3.5rem 3rem;
+            border: 1px solid rgba(218, 209, 194, 0.3);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 4rem;
+        }
+        .reg-landing-features-box h3 {
+            font-size: 1.8rem;
+            color: var(--color-carbon);
+            margin-bottom: 2rem;
+            font-family: var(--font-title);
+            font-weight: 400;
+            text-align: center;
+        }
+        .reg-features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .reg-features-list li {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            color: var(--color-carbon-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+        }
+        .reg-features-list li .heart-bullet {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        .form-section-card {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-organic-2);
+            padding: 3.5rem 3rem;
+            border: 1px solid rgba(185, 198, 161, 0.35);
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 4rem;
+            position: relative;
+        }
+        .form-section-card h3 {
+            font-size: 1.8rem;
+            color: var(--color-terracotta);
+            margin-bottom: 1rem;
+            font-family: var(--font-title);
+            font-weight: 400;
+            text-align: center;
+        }
+        .form-section-card h3 + p {
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--color-carbon-light);
+            margin-bottom: 2rem;
+        }
+        .form-benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 2.5rem auto;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .form-benefits-list li {
+            font-size: 0.95rem;
+            color: var(--color-carbon-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            line-height: 1.5;
+        }
+        .form-iframe-wrapper {
+            width: 100%;
+            background-color: var(--color-bg-warm);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(218, 209, 194, 0.2);
+            overflow: hidden;
+            box-shadow: inset 0 2px 8px rgba(60, 58, 54, 0.03);
+        }
+        .after-form-card {
+            background-color: var(--color-terracotta-light);
+            border-left: 4px solid var(--color-terracotta);
+            padding: 2.2rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+        }
+        .after-form-card h4 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-terracotta);
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .after-form-card p {
+            font-size: 0.98rem;
+            line-height: 1.6;
+            color: var(--color-carbon-light);
+            margin: 0;
+        }
+
+        /* Modal Popup Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(60, 58, 54, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            padding: 1.5rem;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .modal-box {
+            background-color: var(--color-white);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(60, 58, 54, 0.25);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            padding: 3rem 2rem 2rem 2rem;
+        }
+        .modal-overlay.active .modal-box {
+            transform: scale(1);
+        }
+        .modal-close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--color-bg-warm);
+            color: var(--color-carbon);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            z-index: 1002;
+        }
+        .modal-close-btn:hover {
+            background-color: var(--color-terracotta);
+            color: var(--color-white);
+        }
+        .modal-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .modal-header h3 {
+            font-family: var(--font-title);
+            font-size: 1.8rem;
+            color: var(--color-terracotta);
+            margin-bottom: 0.5rem;
+        }
+        .modal-header p {
+            font-size: 0.95rem;
+            color: var(--color-carbon-light);
+            margin: 0;
+        }
+        .modal-body {
+            position: relative;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .reg-landing-section {
+                padding-top: 3.5rem;
+                padding-bottom: 3.5rem;
+            }
+            .reg-landing-welcome-title {
+                font-size: 2.1rem;
+            }
+            .reg-landing-welcome-subtitle {
+                font-size: 1.15rem;
+            }
+            .reg-landing-features-box {
+                padding: 2.2rem 1.5rem;
+            }
+            .form-section-card {
+                padding: 2.2rem 1.2rem;
+            }
+            .modal-box {
+                padding: 2.5rem 1rem 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Registration Landing Section -->
+    <section class="reg-landing-section">
+        <div class="container">
+            
+            <!-- Landing Header -->
+            <div class="reg-landing-header">
+                <img src="assets/logo.png" alt="Sostener-nos Logo" class="reg-landing-logo">
+                <h1 class="reg-landing-welcome-title">No deberías sostener todo esto solo.</h1>
+                <p class="reg-landing-welcome-subtitle">Descubre la comunidad que está acompañando a personas neurodivergentes y sus familias con más comprensión, calma y menos soledad.</p>
+            </div>
+            
+            <!-- Top CTA Button (Triggers Popup) -->
+            <div class="reg-landing-top-cta scroll-animate">
+                <button class="btn btn-large btn-terracotta reg-landing-top-btn pulse-animation" id="open-modal-btn">
+                    QUIERO REGISTRARME Y UNIRME
+                </button>
+            </div>
+
+            <!-- Body Copy Text -->
+            <div class="reg-landing-copy-block scroll-animate">
+                <p>Si llegaste hasta aquí, probablemente tú o alguien que amas está viviendo el <strong>Autismo</strong>, el <strong>TDAH</strong> u otra condición del neurodesarrollo.</p>
+                <p>Y quizás también sabes lo que significa sentir que tienes que resolverlo todo mientras intentas mantenerte fuerte para los demás.</p>
+                <p>Por eso nació <strong>Sostener-nos</strong>.</p>
+                <p>No como otro curso lleno de información.</p>
+                <p>Sino como un espacio de acompañamiento humano, donde aprender, compartir y sentirse comprendido forman parte del mismo camino.</p>
+                <p>Hoy estamos preparando el inicio de nuestra <strong>Primera Generación Fundadora</strong>, un grupo muy especial que vivirá esta experiencia desde el comienzo y tendrá acceso a condiciones exclusivas que no volverán a repetirse.</p>
+            </div>
+            
+            <!-- Features Box: "¿Qué encontrarás dentro?" -->
+            <div class="reg-landing-features-box scroll-animate">
+                <h3>¿Qué encontrarás dentro de Sostener-nos?</h3>
+                <ul class="reg-features-list">
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Una comunidad donde no tendrás que recorrer este camino en soledad.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Formación progresiva sobre Autismo, TDAH y neurodivergencia desde una mirada respetuosa y neuroafirmativa.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Encuentros online en vivo con acompañamiento cercano.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Espacios de preguntas y respuestas.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Casos de estudio y experiencias compartidas.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Herramientas para comprender mejor el diagnóstico sin perderte emocionalmente en el proceso.</span>
+                    </li>
+                    <li>
+                        <span class="heart-bullet">💚</span>
+                        <span>Un lugar donde también importa cómo estás tú.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Form Card Section -->
+            <div class="form-section-card scroll-animate" id="form-section">
+                <h3>Completa el siguiente formulario</h3>
+                <p>Queremos compartir contigo toda la información sobre esta primera generación.</p>
+                
+                <ul class="form-benefits-list">
+                    <li>
+                        <span>✅ Cómo funciona la comunidad.</span>
+                    </li>
+                    <li>
+                        <span>✅ Qué incluye la experiencia.</span>
+                    </li>
+                    <li>
+                        <span>✅ La modalidad de acompañamiento.</span>
+                    </li>
+                    <li>
+                        <span>✅ Los beneficios exclusivos para los miembros fundadores.</span>
+                    </li>
+                    <li>
+                        <span>✅ La oferta especial de lanzamiento.</span>
+                    </li>
+                </ul>
+                
+                <p style="text-align: center; font-size: 0.95rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--color-terracotta);">Solo te tomará un minuto.</p>
+                
+                <div class="form-iframe-wrapper">
+                    <!-- Inline Form Frame -->
+                    <iframe
+                        src="https://api.leadconnectorhq.com/widget/form/kRuNDRvlWCa1g2gwO3I3"
+                        style="width:100%;height:680px;border:none;border-radius:8px"
+                        id="inline-kRuNDRvlWCa1g2gwO3I3" 
+                        data-layout="{'id':'INLINE'}"
+                        data-trigger-type="alwaysShow"
+                        data-trigger-value=""
+                        data-activation-type="alwaysActivated"
+                        data-activation-value=""
+                        data-deactivation-type="neverDeactivate"
+                        data-deactivation-value=""
+                        data-form-name="Fundadores Sostener-nos"
+                        data-height="794"
+                        data-layout-iframe-id="inline-kRuNDRvlWCa1g2gwO3I3"
+                        data-form-id="kRuNDRvlWCa1g2gwO3I3"
+                        title="Fundadores Sostener-nos"
+                    ></iframe>
+                    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+                </div>
+            </div>
+
+            <!-- After Form Notice Card -->
+            <div class="after-form-card scroll-animate">
+                <h4>Después de completar el formulario</h4>
+                <p>Podrás acceder a una página con todos los detalles de Sostener-nos y unirte al grupo privado donde estaremos compartiendo información exclusiva, novedades y la fecha oficial de apertura de la comunidad.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal Popup Overlay for Top CTA Form -->
+    <div class="modal-overlay" id="form-modal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="close-modal-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <h3>Completa tu registro</h3>
+                <p>Solo te tomará un minuto conocer toda la propuesta fundadora.</p>
+            </div>
+            <div class="modal-body">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/kRuNDRvlWCa1g2gwO3I3"
+                    style="width:100%;height:580px;border:none;border-radius:8px"
+                    id="popup-kRuNDRvlWCa1g2gwO3I3" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Fundadores Sostener-nos"
+                    data-height="794"
+                    data-layout-iframe-id="popup-kRuNDRvlWCa1g2gwO3I3"
+                    data-form-id="kRuNDRvlWCa1g2gwO3I3"
+                    title="Fundadores Sostener-nos"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container text-center">
+            <div class="footer-branding">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/favicon.png" alt="Sostener-nos Isotipo" class="footer-favicon">
+                    <span class="brand-name-serif">Sostener-<span class="brand-name-handwritten">nos</span></span>
+                </a>
+                <p class="footer-tagline">Comunidad de apoyo y acompañamiento emocional para familias neurodivergentes</p>
+            </div>
+            
+            <div class="footer-phrase-block">
+                <p class="footer-phrase">“Comprender. Acompañar. Sostener.”</p>
+                <p class="footer-subphrase">Un espacio para comprender, acompañar y transitar juntos.</p>
+            </div>
+            
+            <hr class="footer-separator">
+            
+            <div class="footer-bottom-meta">
+                <p class="copyright">&copy; 2026 Sostener-nos. Todos los derechos reservados. Creado por Luz Ayda Marín y Mauricio Martínez.</p>
+                <p class="disclaimer">Esta comunidad ofrece acompañamiento psicoeducativo y contención emocional parental, no sustituye evaluación diagnóstica ni psicoterapia individual formal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script file -->
+    <script src="app.js"></script>
+    
+    <!-- Modal Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openModalBtn = document.getElementById('open-modal-btn');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const modalOverlay = document.getElementById('form-modal');
+            
+            if (openModalBtn && modalOverlay) {
+                // Open Modal Function
+                openModalBtn.addEventListener('click', () => {
+                    modalOverlay.classList.add('active');
+                    document.body.classList.add('modal-open');
+                });
+                
+                // Close Modal Function
+                const closeModal = () => {
+                    modalOverlay.classList.remove('active');
+                    document.body.classList.remove('modal-open');
+                };
+                
+                if (closeModalBtn) {
+                    closeModalBtn.addEventListener('click', closeModal);
+                }
+                
+                // Close when clicking overlay background
+                modalOverlay.addEventListener('click', (e) => {
+                    if (e.target === modalOverlay) {
+                        closeModal();
+                    }
+                });
+                
+                // Close on ESC key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                        closeModal();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

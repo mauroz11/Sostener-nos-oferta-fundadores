@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Ya estás un paso más cerca de Sostener-nos! Conoce los pasos para unirte al grupo privado y conocer la propuesta fundadora.">
+    <title>Falta poco - Sostener-nos</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Specific Registration Thank You Page Styles -->
+    <style>
+        .reg-thanks-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: var(--color-bg-warm);
+        }
+        .reg-thanks-header {
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+        .reg-thanks-logo {
+            max-width: 240px;
+            height: auto;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+        }
+        .reg-thanks-welcome-title {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+            color: var(--color-carbon);
+            line-height: 1.25;
+        }
+        .reg-thanks-welcome-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-terracotta);
+            margin-bottom: 1.5rem;
+        }
+        .reg-thanks-welcome-note {
+            font-size: 1.1rem;
+            color: var(--color-carbon-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .reg-thanks-intro-box {
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--color-carbon);
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        .reg-thanks-intro-box p {
+            margin-bottom: 1.2rem;
+        }
+        .reg-thanks-intro-box p:last-child {
+            margin-bottom: 0;
+        }
+        .steps-container {
+            margin-bottom: 4rem;
+        }
+        .steps-title {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-family: var(--font-title);
+        }
+        .step-block-card {
+            background-color: var(--color-white);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(218, 209, 194, 0.25);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+        .step-block-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 0 100%;
+            opacity: 0.4;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .step-card-lavender::after {
+            background-color: var(--color-lavender-light);
+        }
+        .step-card-sage::after {
+            background-color: var(--color-sage-light);
+        }
+        .step-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+        .step-badge {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--color-white);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-lavender {
+            background-color: var(--color-lavender);
+        }
+        .badge-sage {
+            background-color: var(--color-sage);
+        }
+        .step-card-header h3 {
+            font-size: 1.45rem;
+            color: var(--color-carbon);
+            margin: 0;
+            font-family: var(--font-title);
+        }
+        .step-details-p {
+            font-size: 1.05rem;
+            color: var(--color-carbon);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .step-bullets-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .step-bullets-list li {
+            font-size: 0.95rem;
+            color: var(--color-carbon-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            line-height: 1.5;
+        }
+        .step-btn-container {
+            text-align: center;
+        }
+        .btn-whatsapp-join {
+            background-color: #25D366;
+            color: var(--color-white) !important;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+            font-weight: 700;
+            gap: 0.8rem;
+            text-decoration: none;
+            width: 100%;
+            max-width: 480px;
+        }
+        .btn-whatsapp-join:hover {
+            background-color: #128C7E;
+            box-shadow: 0 8px 25px rgba(18, 140, 126, 0.3);
+            transform: translateY(-3px);
+        }
+        .btn-whatsapp-join svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+        .btn-offer-go {
+            width: 100%;
+            max-width: 480px;
+            font-weight: 700;
+        }
+        .reg-thanks-message-card {
+            background-color: var(--color-white);
+            padding: 3.5rem 3rem;
+            border-radius: var(--border-radius-organic-1);
+            border: 1px solid rgba(218, 209, 194, 0.3);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 4rem;
+        }
+        .reg-thanks-message-card h3 {
+            font-size: 1.6rem;
+            color: var(--color-terracotta);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-title);
+            font-weight: 400;
+        }
+        .reg-thanks-message-card p {
+            font-size: 1.05rem;
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+            color: var(--color-carbon-light);
+        }
+        .reg-thanks-message-card p:last-child {
+            margin-bottom: 0;
+        }
+        .reg-thanks-message-card strong {
+            color: var(--color-carbon);
+        }
+        @media (max-width: 768px) {
+            .reg-thanks-section {
+                padding-top: 3.5rem;
+                padding-bottom: 3.5rem;
+            }
+            .reg-thanks-welcome-title {
+                font-size: 2.1rem;
+            }
+            .reg-thanks-welcome-subtitle {
+                font-size: 1.15rem;
+            }
+            .step-block-card {
+                padding: 2.2rem 1.5rem;
+            }
+            .step-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+            .reg-thanks-message-card {
+                padding: 2.2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Registration Thank You Section -->
+    <section class="reg-thanks-section">
+        <div class="container">
+            
+            <!-- Thanks Header -->
+            <div class="reg-thanks-header">
+                <img src="assets/logo.png" alt="Sostener-nos Logo" class="reg-thanks-logo">
+                <h1 class="reg-thanks-welcome-title">¡Ya estás un paso más cerca de Sostener-nos!</h1>
+                <p class="reg-thanks-welcome-subtitle">Gracias por dar este primer paso.</p>
+                <p class="reg-thanks-welcome-note">Nos alegra muchísimo que quieras conocer más sobre esta comunidad.</p>
+            </div>
+
+            <!-- Intro Text Box -->
+            <div class="reg-thanks-intro-box scroll-animate">
+                <p>Sostener-nos nació con un propósito muy simple:</p>
+                <p class="highlight-lead">Que ninguna persona neurodivergente ni ninguna familia tenga que recorrer este camino en soledad.</p>
+                <p>En este momento estamos preparando el inicio de nuestra <strong>Primera Generación Fundadora</strong>, un grupo muy especial que tendrá condiciones que no volverán a repetirse.</p>
+            </div>
+            
+            <!-- Steps Section: "¿Qué hacer ahora?" -->
+            <div class="steps-container">
+                <h2 class="steps-title scroll-animate">¿Qué hacer ahora?</h2>
+                
+                <!-- Step 1 Card -->
+                <div class="step-block-card step-card-lavender scroll-animate">
+                    <div class="step-card-header">
+                        <span class="step-badge badge-lavender">Paso 1</span>
+                        <h3>Únete al grupo privado</h3>
+                    </div>
+                    
+                    <p class="step-details-p">Será el primer lugar donde compartiremos:</p>
+                    
+                    <ul class="step-bullets-list">
+                        <li>
+                            <span>✅ La fecha oficial de apertura.</span>
+                        </li>
+                        <li>
+                            <span>✅ Información exclusiva sobre la comunidad.</span>
+                        </li>
+                        <li>
+                            <span>✅ Contenido de valor antes del lanzamiento.</span>
+                        </li>
+                        <li>
+                            <span>✅ Recordatorios importantes.</span>
+                        </li>
+                        <li>
+                            <span>✅ Espacios para resolver dudas.</span>
+                        </li>
+                    </ul>
+                    
+                    <p class="step-details-p text-center" style="font-weight: 500; font-size: 0.95rem; margin-bottom: 1rem;">👇 Haz clic aquí para unirte ahora.</p>
+                    
+                    <div class="step-btn-container">
+                        <a href="https://swiy.co/Fundadores-Sostener-nos" target="_blank" rel="noopener noreferrer" class="btn btn-large btn-whatsapp-join">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.197 1.451 4.793 1.453 5.429 0 9.849-4.42 9.853-9.852.002-2.633-1.02-5.107-2.88-6.97C16.556 1.9 14.09 .876 11.46.876 6.037.876 1.618 5.297 1.614 10.73c-.001 1.62.422 3.206 1.229 4.622l-.993 3.626 3.71-.973zm13.125-6.848c-.287-.144-1.7-.84-1.962-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-1.359-.684-2.286-1.128-3.216-2.736-.288-.492.288-.456.828-1.536.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.474-.492-.648-.492-.168 0-.36-.024-.552-.024-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.032 3.104 4.92 4.344.688.296 1.224.472 1.64.608.696.224 1.328.192 1.832.12.56-.08 1.7-.696 1.944-1.368.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.552-.336z"/>
+                            </svg>
+                            QUIERO UNIRME AL GRUPO
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Step 2 Card -->
+                <div class="step-block-card step-card-sage scroll-animate">
+                    <div class="step-card-header">
+                        <span class="step-badge badge-sage">Paso 2</span>
+                        <h3>Conoce todos los detalles de Sostener-nos</h3>
+                    </div>
+                    
+                    <p class="step-details-p">Descubre:</p>
+                    
+                    <ul class="step-bullets-list">
+                        <li>
+                            <span>• Qué encontrarás dentro de la comunidad.</span>
+                        </li>
+                        <li>
+                            <span>• Cómo será esta primera experiencia en vivo.</span>
+                        </li>
+                        <li>
+                            <span>• Todo lo que incluye la Generación Fundadora.</span>
+                        </li>
+                        <li>
+                            <span>• La oferta especial de acceso vitalicio para quienes ingresen durante esta etapa.</span>
+                        </li>
+                    </ul>
+                    
+                    <p class="step-details-p text-center" style="font-weight: 500; font-size: 0.95rem; margin-bottom: 1rem;">👇 Puedes verlo aquí.</p>
+                    
+                    <div class="step-btn-container">
+                        <a href="https://swiy.co/Quiero-conocer-Sostener-nos" target="_blank" rel="noopener noreferrer" class="btn btn-large btn-terracotta btn-offer-go pulse-animation">
+                            QUIERO CONOCER LA OFERTA COMPLETA
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Closing Message Card -->
+            <div class="reg-thanks-message-card scroll-animate">
+                <h3>Un mensaje antes de irte...</h3>
+                <p>Esta primera generación será diferente.</p>
+                <p>No estamos lanzando simplemente una plataforma con videos. Estamos construyendo una <strong>comunidad viva</strong>, donde aprenderemos, compartiremos y creceremos junto a las primeras familias que decidan caminar con nosotros desde el inicio.</p>
+                <p>Por eso, las condiciones de esta etapa fundadora serán únicas.</p>
+                <p>Cuando la comunidad abra oficialmente sus puertas al público, el acceso será mediante membresías mensuales, semestrales o anuales, y las condiciones serán diferentes a las de quienes decidan unirse ahora como miembros fundadores.</p>
+                <p>Si sientes que este espacio resuena contigo, te recomendamos unirte al grupo y conocer todos los detalles de la propuesta.</p>
+                <p style="font-weight: 600; color: var(--color-terracotta); text-align: center; margin-top: 1.5rem; font-size: 1.1rem;">Nos encantará darte la bienvenida a Sostener-nos.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container text-center">
+            <div class="footer-branding">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/favicon.png" alt="Sostener-nos Isotipo" class="footer-favicon">
+                    <span class="brand-name-serif">Sostener-<span class="brand-name-handwritten">nos</span></span>
+                </a>
+                <p class="footer-tagline">Comunidad de apoyo y acompañamiento emocional para familias neurodivergentes</p>
+            </div>
+            
+            <div class="footer-phrase-block">
+                <p class="footer-phrase">“Comprender. Acompañar. Sostener.”</p>
+                <p class="footer-subphrase">Un espacio para comprender, acompañar y transitar juntos.</p>
+            </div>
+            
+            <hr class="footer-separator">
+            
+            <div class="footer-bottom-meta">
+                <p class="copyright">&copy; 2026 Sostener-nos. Todos los derechos reservados. Creado por Luz Ayda Marín y Mauricio Martínez.</p>
+                <p class="disclaimer">Esta comunidad ofrece acompañamiento psicoeducativo y contención emocional parental, no sustituye evaluación diagnóstica ni psicoterapia individual formal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script file -->
+    <script src="app.js"></script>
+</body>
+</html>

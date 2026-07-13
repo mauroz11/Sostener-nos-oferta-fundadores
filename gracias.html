@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Bienvenido a Sostener-nos! Ya eres parte de nuestra comunidad de acompañamiento emocional para familias neurodivergentes.">
+    <title>¡Bienvenido a Sostener-nos! - Generación Fundadora</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Specific Thank You Page Styles -->
+    <style>
+        .thanks-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: var(--color-bg-warm);
+        }
+        .thanks-header {
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+        .thanks-logo {
+            max-width: 240px;
+            height: auto;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+        }
+        .thanks-welcome-heart {
+            color: var(--color-terracotta);
+            display: inline-block;
+            animation: heart-pulse 1.6s infinite ease-in-out;
+        }
+        @keyframes heart-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+        .thanks-welcome-title {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--color-carbon);
+            line-height: 1.2;
+        }
+        .thanks-welcome-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-terracotta);
+            margin-bottom: 2.5rem;
+        }
+        .whatsapp-cta-block {
+            background-color: var(--color-white);
+            border: 1px solid rgba(185, 198, 161, 0.4);
+            border-radius: var(--border-radius-organic-1);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+        .whatsapp-cta-block::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--color-sage-light);
+            border-radius: 0 0 0 100%;
+            opacity: 0.4;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: var(--color-white) !important;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+            font-weight: 700;
+            gap: 0.8rem;
+            text-decoration: none;
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            z-index: 2;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            box-shadow: 0 8px 25px rgba(18, 140, 126, 0.3);
+            transform: translateY(-3px);
+        }
+        .whatsapp-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+        .whatsapp-cta-text {
+            font-size: 0.9rem;
+            color: var(--color-carbon-light);
+            margin-top: 1rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+        .thanks-intro-box {
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--color-carbon);
+            margin-bottom: 3.5rem;
+            text-align: center;
+        }
+        .thanks-intro-box p {
+            margin-bottom: 1.2rem;
+        }
+        .thanks-intro-box p:last-child {
+            margin-bottom: 0;
+        }
+        .thanks-message-card {
+            background-color: var(--color-white);
+            padding: 3.5rem 3rem;
+            border-radius: var(--border-radius-organic-2);
+            border: 1px solid rgba(218, 209, 194, 0.3);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 4rem;
+        }
+        .thanks-message-card h3 {
+            font-size: 1.45rem;
+            color: var(--color-terracotta);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-title);
+            font-weight: 400;
+        }
+        .thanks-message-card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .thanks-message-card p:last-of-type {
+            margin-bottom: 0;
+        }
+        .thanks-message-quote {
+            font-family: var(--font-handwritten);
+            font-size: 2.3rem;
+            color: var(--color-terracotta);
+            text-align: center;
+            margin-top: 2rem;
+            line-height: 1.1;
+        }
+        .steps-container {
+            margin-bottom: 4rem;
+        }
+        .steps-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-family: var(--font-title);
+        }
+        .step-card {
+            background-color: var(--color-white);
+            border-radius: 24px;
+            padding: 2.2rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(218, 209, 194, 0.25);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            gap: 1.8rem;
+            align-items: flex-start;
+        }
+        .step-num {
+            font-family: var(--font-title);
+            font-size: 2.8rem;
+            color: var(--color-beige);
+            line-height: 1;
+            flex-shrink: 0;
+            background-color: var(--color-beige-light);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .step-content {
+            flex-grow: 1;
+        }
+        .step-content h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            color: var(--color-carbon);
+            font-family: var(--font-body);
+        }
+        .step-content p {
+            font-size: 0.95rem;
+            color: var(--color-carbon-light);
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+        .step-check-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        .step-check-list li {
+            font-size: 0.95rem;
+            color: var(--color-carbon-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+        }
+        .step-check-list li span {
+            line-height: 1.4;
+        }
+        .thanks-info-card {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-organic-1);
+            padding: 3.5rem 3rem;
+            border: 1px dashed var(--color-sage);
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 4rem;
+        }
+        .thanks-info-card h3 {
+            font-size: 1.6rem;
+            color: var(--color-sage);
+            margin-bottom: 1.2rem;
+            font-family: var(--font-title);
+            font-weight: 400;
+        }
+        .thanks-info-card p {
+            font-size: 1.05rem;
+            line-height: 1.65;
+            margin-bottom: 1.2rem;
+        }
+        .thanks-info-card p:last-child {
+            margin-bottom: 0;
+        }
+        .important-notice-box {
+            background-color: var(--color-terracotta-light);
+            border-left: 4px solid var(--color-terracotta);
+            padding: 2.2rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+        }
+        .important-notice-box h3 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-terracotta);
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .important-notice-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-carbon-light);
+            margin-bottom: 0.8rem;
+        }
+        .important-notice-box p:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .thanks-section {
+                padding-top: 3.5rem;
+                padding-bottom: 3.5rem;
+            }
+            .thanks-welcome-title {
+                font-size: 2.1rem;
+            }
+            .thanks-welcome-subtitle {
+                font-size: 1.15rem;
+            }
+            .step-card {
+                flex-direction: column;
+                gap: 1.2rem;
+                align-items: center;
+                text-align: center;
+                padding: 2rem 1.5rem;
+            }
+            .step-num {
+                width: 56px;
+                height: 56px;
+                font-size: 2.4rem;
+            }
+            .step-check-list li {
+                justify-content: center;
+                text-align: left;
+            }
+            .thanks-message-card {
+                padding: 2.2rem 1.5rem;
+            }
+            .thanks-message-quote {
+                font-size: 1.8rem;
+            }
+            .thanks-info-card {
+                padding: 2.2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thank You Section -->
+    <section class="thanks-section">
+        <div class="container">
+            
+            <!-- Thanks Header -->
+            <div class="thanks-header">
+                <img src="assets/logo.png" alt="Sostener-nos Logo" class="thanks-logo">
+                <h1 class="thanks-welcome-title">Bienvenido a Sostener-nos <span class="thanks-welcome-heart">❤️</span></h1>
+                <p class="thanks-welcome-subtitle">Ya formas parte de la Generación Fundadora</p>
+            </div>
+            
+            <!-- WhatsApp CTA Block (Top Placement) -->
+            <div class="whatsapp-cta-block scroll-animate">
+                <a href="https://chat.whatsapp.com/K5xoJ9sAWevBaRzwaXEcAC?s=cl&p=a&ilr=1&amv=0" target="_blank" rel="noopener noreferrer" class="btn btn-large whatsapp-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.197 1.451 4.793 1.453 5.429 0 9.849-4.42 9.853-9.852.002-2.633-1.02-5.107-2.88-6.97C16.556 1.9 14.09 .876 11.46.876 6.037.876 1.618 5.297 1.614 10.73c-.001 1.62.422 3.206 1.229 4.622l-.993 3.626 3.71-.973zm13.125-6.848c-.287-.144-1.7-.84-1.962-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-1.359-.684-2.286-1.128-3.216-2.736-.288-.492.288-.456.828-1.536.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.474-.492-.648-.492-.168 0-.36-.024-.552-.024-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.032 3.104 4.92 4.344.688.296 1.224.472 1.64.608.696.224 1.328.192 1.832.12.56-.08 1.7-.696 1.944-1.368.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.552-.336z"/>
+                    </svg>
+                    Entrar ahora al grupo de WhatsApp
+                </a>
+                <p class="whatsapp-cta-text">¡Muy importante! Haz clic arriba para unirte al grupo oficial de acompañamiento.</p>
+            </div>
+
+            <!-- Intro Text Box -->
+            <div class="thanks-intro-box scroll-animate">
+                <p>Hoy no solo acabas de unirte a una comunidad.</p>
+                <p class="highlight-lead">Has decidido dejar de recorrer este camino en soledad.</p>
+                <p>Gracias por confiar en nosotros y por permitirnos acompañarte en esta nueva etapa.</p>
+            </div>
+            
+            <!-- A Small Message Card -->
+            <div class="thanks-message-card scroll-animate">
+                <h3>Un pequeño mensaje</h3>
+                <p>Sabemos que muchas personas llegan aquí después de meses o incluso años intentando encontrar respuestas, sosteniendo emociones difíciles y sintiendo que tenían que poder con todo.</p>
+                <p>Queremos que desde hoy recuerdes algo muy sencillo:</p>
+                <p class="thanks-message-quote">"Aquí también hay un lugar para ti. Aquí no solo importa el diagnóstico. También importa cómo estás tú."</p>
+            </div>
+            
+            <!-- Steps Section: "¿Qué ocurre ahora?" -->
+            <div class="steps-container">
+                <h2 class="steps-title scroll-animate">¿Qué ocurre ahora?</h2>
+                
+                <!-- Step 1 -->
+                <div class="step-card scroll-animate">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Revisa tu correo electrónico</h4>
+                        <p>En los próximos minutos recibirás un correo con tus datos de acceso a la plataforma.</p>
+                        <p><strong>Si no aparece en tu bandeja principal</strong>, revisa también tus carpetas de <em>Promociones</em> o <em>Spam</em>.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card scroll-animate">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Accede a la comunidad</h4>
+                        <p>Dentro encontrarás todo el material listo para comenzar a tu ritmo:</p>
+                        <ul class="step-check-list">
+                            <li>
+                                <span>✅ El módulo de bienvenida.</span>
+                            </li>
+                            <li>
+                                <span>✅ Las instrucciones para empezar.</span>
+                            </li>
+                            <li>
+                                <span>✅ Los primeros recursos disponibles.</span>
+                            </li>
+                            <li>
+                                <span>✅ El calendario de los próximos encuentros en vivo.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-card scroll-animate">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Preséntate</h4>
+                        <p>Cuando ingreses a la comunidad, te invitamos a escribir tu primer mensaje en el foro.</p>
+                        <p>Cuéntanos:</p>
+                        <ul class="step-check-list">
+                            <li>• Tu nombre,</li>
+                            <li>• Desde dónde nos acompañas,</li>
+                            <li>• Y qué te motivó a unirte a Sostener-nos.</li>
+                        </ul>
+                        <p style="margin-top: 0.8rem; font-weight: 500; color: var(--color-terracotta);">Queremos conocerte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Expectation Section -->
+            <div class="thanks-info-card scroll-animate">
+                <h3>Qué puedes esperar de esta primera generación</h3>
+                <p>Esta comunidad nace como una experiencia viva. Eso significa que iremos construyendo progresivamente cada módulo mediante sesiones online, encuentros de acompañamiento y conversaciones profundas.</p>
+                <p>Como miembro fundador tendrás la oportunidad de vivir ese proceso desde el principio y participar activamente en el crecimiento de Sostener-nos.</p>
+                <p style="font-weight: 600; color: var(--color-sage);">Nos emociona muchísimo que estés aquí desde el inicio.</p>
+            </div>
+            
+            <!-- Very Important Box -->
+            <div class="important-notice-box scroll-animate">
+                <h3>Muy importante</h3>
+                <p>No necesitas intentar verlo todo o aprenderlo todo hoy. No hay prisa.</p>
+                <p>Queremos que recorras este camino paso a paso.</p>
+                <p><strong>Porque la transformación no ocurre por consumir más información. Ocurre cuando te sientes acompañado mientras la integras.</strong></p>
+            </div>
+
+            <!-- WhatsApp CTA Block (Bottom Placement) -->
+            <div class="whatsapp-cta-block scroll-animate">
+                <a href="https://chat.whatsapp.com/K5xoJ9sAWevBaRzwaXEcAC?s=cl&p=a&ilr=1&amv=0" target="_blank" rel="noopener noreferrer" class="btn btn-large whatsapp-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.197 1.451 4.793 1.453 5.429 0 9.849-4.42 9.853-9.852.002-2.633-1.02-5.107-2.88-6.97C16.556 1.9 14.09 .876 11.46.876 6.037.876 1.618 5.297 1.614 10.73c-.001 1.62.422 3.206 1.229 4.622l-.993 3.626 3.71-.973zm13.125-6.848c-.287-.144-1.7-.84-1.962-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-1.359-.684-2.286-1.128-3.216-2.736-.288-.492.288-.456.828-1.536.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.474-.492-.648-.492-.168 0-.36-.024-.552-.024-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.032 3.104 4.92 4.344.688.296 1.224.472 1.64.608.696.224 1.328.192 1.832.12.56-.08 1.7-.696 1.944-1.368.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.552-.336z"/>
+                    </svg>
+                    Entrar ahora al grupo de WhatsApp
+                </a>
+                <p class="whatsapp-cta-text">Haz clic arriba para unirte al grupo y no perderte de nada.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container text-center">
+            <div class="footer-branding">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/favicon.png" alt="Sostener-nos Isotipo" class="footer-favicon">
+                    <span class="brand-name-serif">Sostener-<span class="brand-name-handwritten">nos</span></span>
+                </a>
+                <p class="footer-tagline">Comunidad de apoyo y acompañamiento emocional para familias neurodivergentes</p>
+            </div>
+            
+            <div class="footer-phrase-block">
+                <p class="footer-phrase">“Comprender. Acompañar. Sostener.”</p>
+                <p class="footer-subphrase">Un espacio para comprender, acompañar y transitar juntos.</p>
+            </div>
+            
+            <hr class="footer-separator">
+            
+            <div class="footer-bottom-meta">
+                <p class="copyright">&copy; 2026 Sostener-nos. Todos los derechos reservados. Creado por Luz Ayda Marín y Mauricio Martínez.</p>
+                <p class="disclaimer">Esta comunidad ofrece acompañamiento psicoeducativo y contención emocional parental, no sustituye evaluación diagnóstica ni psicoterapia individual formal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive script file -->
+    <script src="app.js"></script>
+</body>
+</html>
