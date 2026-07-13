@@ -31,8 +31,8 @@
     --space-sm: 1rem;
     --space-md: 1.5rem;
     --space-lg: 2.5rem;
-    --space-xl: 4rem;
-    --space-xxl: 6rem;
+    --space-xl: 2.2rem;
+    --space-xxl: 3.8rem;
 
     /* Shadows & Borders */
     --shadow-soft: 0 10px 30px rgba(60, 58, 54, 0.05);
@@ -100,7 +100,7 @@ button {
    ========================================================================== */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
@@ -109,8 +109,8 @@ button {
 
 .max-w-600 { max-width: 600px; margin-left: auto; margin-right: auto; }
 .max-w-700 { max-width: 700px; margin-left: auto; margin-right: auto; }
-.max-w-900 { max-width: 900px; margin-left: auto; margin-right: auto; }
-.max-w-1000 { max-width: 1000px; margin-left: auto; margin-right: auto; }
+.max-w-900 { max-width: 800px; margin-left: auto; margin-right: auto; }
+.max-w-1000 { max-width: 800px; margin-left: auto; margin-right: auto; }
 
 .text-center { text-align: center; }
 .text-left { text-align: left; }
@@ -625,14 +625,14 @@ section {
 
 .sentir-cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 4rem;
 }
 
 .sentir-card {
     background-color: var(--color-white);
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
     border-radius: var(--border-radius-organic-1);
     box-shadow: var(--shadow-soft);
     position: relative;
@@ -1090,7 +1090,7 @@ section {
 
 .ecosistema-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 5rem;
 }
@@ -1115,7 +1115,8 @@ section {
     right: -10px;
     font-family: var(--font-title);
     font-size: 6rem;
-    color: var(--color-arena-light);
+    color: var(--color-beige);
+    opacity: 0.35;
     line-height: 1;
     z-index: 1;
     user-select: none;
@@ -1386,6 +1387,15 @@ section {
     border-radius: 50%;
 }
 
+.creador-avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
 .creador-role-badge {
     position: absolute;
     bottom: -10px;
@@ -1479,7 +1489,7 @@ section {
     border-radius: var(--border-radius-organic-1);
     box-shadow: var(--shadow-medium);
     border: 1px solid rgba(218, 209, 194, 0.3);
-    padding: 5rem 4rem;
+    padding: 4rem 2.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -1529,8 +1539,8 @@ section {
 
 .offer-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 3.5rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
     position: relative;
     z-index: 2;
 }
@@ -1594,6 +1604,8 @@ section {
     border-radius: var(--border-radius-organic-2);
     padding: 3.5rem 2.5rem;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     box-shadow: var(--shadow-soft);
     position: relative;
 }
@@ -1877,8 +1889,8 @@ section {
 /* Mobile Screens (under 768px) */
 @media (max-width: 768px) {
     :root {
-        --space-xl: 3rem;
-        --space-xxl: 4rem;
+        --space-xl: 1.5rem;
+        --space-xxl: 2.2rem;
     }
 
     .main-header {
