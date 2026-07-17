@@ -425,7 +425,8 @@
             </div>
             <div class="modal-body">
                 <iframe
-                    src="https://api.leadconnectorhq.com/widget/form/kRuNDRvlWCa1g2gwO3I3"
+                    src="about:blank"
+                    data-src="https://api.leadconnectorhq.com/widget/form/kRuNDRvlWCa1g2gwO3I3"
                     style="width:100%;height:580px;border:none;border-radius:8px"
                     id="popup-kRuNDRvlWCa1g2gwO3I3" 
                     data-layout="{'id':'INLINE'}"
@@ -479,12 +480,18 @@
             const openModalBtn = document.getElementById('open-modal-btn');
             const closeModalBtn = document.getElementById('close-modal-btn');
             const modalOverlay = document.getElementById('form-modal');
+            const popupIframe = document.getElementById('popup-kRuNDRvlWCa1g2gwO3I3');
             
             if (openModalBtn && modalOverlay) {
                 // Open Modal Function
                 openModalBtn.addEventListener('click', () => {
                     modalOverlay.classList.add('active');
                     document.body.classList.add('modal-open');
+                    
+                    // Lazy load the iframe when opening the modal
+                    if (popupIframe && (popupIframe.src === 'about:blank' || !popupIframe.src)) {
+                        popupIframe.src = popupIframe.getAttribute('data-src');
+                    }
                 });
                 
                 // Close Modal Function
