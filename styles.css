@@ -2174,6 +2174,7 @@ section {
     border-radius: var(--border-radius-organic-2);
     padding: 3rem 2rem;
     box-shadow: var(--shadow-soft);
+    position: relative;
 }
 
 .price-value-container-featured {
