@@ -28,8 +28,8 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 .container{width:100%;max-width:780px;margin:0 auto;padding:0 1.5rem}
 .container-wide{width:100%;max-width:960px;margin:0 auto;padding:0 1.5rem}
 .text-center{text-align:center}
-.scroll-animate{opacity:0;transform:translateY(28px);transition:opacity 0.75s ease-out,transform 0.75s cubic-bezier(0.25,1,0.5,1)}
-.scroll-animate.animated{opacity:1;transform:translateY(0)}
+.scroll-animate{opacity:0;transition:opacity 0.6s ease}
+.scroll-animate.animated{opacity:1}
 .delay-1{transition-delay:0.1s}.delay-2{transition-delay:0.2s}.delay-3{transition-delay:0.3s}.delay-4{transition-delay:0.4s}
 .fade-in{animation:fadeInUp 0.9s cubic-bezier(0.25,1,0.5,1) both}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
@@ -42,14 +42,10 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 .sticky-bar.visible{transform:translateY(0);opacity:1}
 .sticky-bar-text{font-family:var(--font-title);font-size:1rem;color:var(--color-carbon);flex:1}
 .sticky-bar-text span{color:var(--color-terracotta)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;font-family:var(--font-body);font-weight:600;padding:1rem 2.2rem;border-radius:50px;font-size:1rem;letter-spacing:0.3px;transition:var(--transition-smooth);border:none;cursor:pointer;text-decoration:none;line-height:1.3}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;font-family:var(--font-body);font-weight:600;padding:1rem 2.2rem;border-radius:50px;font-size:1rem;letter-spacing:0.3px;border:none;cursor:pointer;text-decoration:none;line-height:1.3;-webkit-tap-highlight-color:transparent;touch-action:manipulation;position:relative;z-index:2;transform:none;transition:none}
 .btn-xl{padding:1.2rem 2.8rem;font-size:1.1rem}
 .btn-sm{padding:0.65rem 1.5rem;font-size:0.9rem}
-.btn-primary{background:linear-gradient(135deg,var(--color-terracotta) 0%,#A9634A 100%);color:var(--color-white);box-shadow:0 6px 22px rgba(194,122,90,0.35)}
-.btn-primary:hover{background:linear-gradient(135deg,#A9634A 0%,var(--color-carbon) 100%);box-shadow:0 10px 30px rgba(60,58,54,0.25)}
-.btn-primary:active{filter:brightness(0.92)}
-.btn-pulse{animation:pulseCTA 2.4s ease-in-out infinite}
-@keyframes pulseCTA{0%,100%{box-shadow:0 6px 22px rgba(194,122,90,0.35)}50%{box-shadow:0 10px 35px rgba(194,122,90,0.55),0 0 0 8px rgba(194,122,90,0.08)}}
+.btn-primary{background:linear-gradient(135deg,var(--color-terracotta) 0%,#A9634A 100%);color:var(--color-white);box-shadow:0 4px 18px rgba(194,122,90,0.3)}
 .btn-subtext{display:block;font-size:0.78rem;font-weight:400;color:var(--color-carbon-light);margin-top:0.5rem;text-align:center;font-style:italic}
 .hero-section{min-height:100vh;padding:3rem 0 4rem;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero-inner{position:relative;z-index:1;text-align:center;width:100%}
@@ -84,8 +80,8 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 .narrative-text p{margin-bottom:1.2rem}
 .narrative-highlight{font-family:var(--font-title);font-size:clamp(1.3rem,3.5vw,1.8rem);color:var(--color-carbon);line-height:1.3;font-style:italic;margin:2.5rem 0;padding:2rem;border-left:4px solid var(--color-terracotta);background:var(--color-terracotta-light);border-radius:0 16px 16px 0;text-align:left}
 .pain-list{display:flex;flex-direction:column;gap:0.85rem;margin:2rem 0}
-.pain-item{display:flex;align-items:flex-start;gap:0.85rem;padding:1rem 1.2rem;background:var(--color-arena-light);border-radius:12px;border-left:3px solid var(--color-arena);transition:var(--transition-fast)}
-.pain-item:hover{border-left-color:var(--color-terracotta);background:var(--color-terracotta-light);transform:translateX(4px)}
+.pain-item{display:flex;align-items:flex-start;gap:0.85rem;padding:1rem 1.2rem;background:var(--color-arena-light);border-radius:12px;border-left:3px solid var(--color-arena)}
+.pain-item:hover{border-left-color:var(--color-terracotta);background:var(--color-terracotta-light)}
 .pain-item-icon{font-size:1.1rem;flex-shrink:0;margin-top:0.1rem}
 .pain-item-text{font-size:0.95rem;color:var(--color-carbon);line-height:1.6}
 .cta-band{background:linear-gradient(135deg,var(--color-carbon) 0%,#2A2926 100%);padding:4rem 0;position:relative;overflow:hidden}
@@ -108,15 +104,15 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 .benefit-text strong{color:var(--color-terracotta);font-weight:600}
 .for-you-section{background:linear-gradient(160deg,var(--color-lavender-light) 0%,var(--color-beige-light) 100%);position:relative}
 .for-you-cards{display:flex;flex-direction:column;gap:0.9rem;margin-top:2.5rem}
-.for-you-item{display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.3rem;background:var(--color-white);border-radius:14px;border:1px solid rgba(154,143,180,0.2);box-shadow:var(--shadow-soft);transition:var(--transition-fast)}
-.for-you-item:hover{border-color:var(--color-lavender);transform:translateX(4px)}
+.for-you-item{display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.3rem;background:var(--color-white);border-radius:14px;border:1px solid rgba(154,143,180,0.2);box-shadow:var(--shadow-soft)}
+.for-you-item:hover{border-color:var(--color-lavender)}
 .for-you-check{width:26px;height:26px;border-radius:50%;background:var(--color-lavender);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:0.8rem;font-weight:700;margin-top:0.1rem}
 .for-you-text{font-size:0.96rem;color:var(--color-carbon);line-height:1.65}
 .closing-section{background:var(--color-white);text-align:center}
-.modal-overlay{position:fixed;inset:0;background:rgba(60,58,54,0.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:9000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity 0.3s ease}
+.modal-overlay{position:fixed;inset:0;background:rgba(60,58,54,0.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:9000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:none}
 .modal-overlay.open{opacity:1;pointer-events:all}
-.modal-card{background:var(--color-white);border-radius:24px;max-width:580px;width:100%;max-height:92vh;overflow-y:auto;position:relative;box-shadow:0 30px 80px rgba(60,58,54,0.25);transform:translateY(30px) scale(0.97);transition:transform 0.35s cubic-bezier(0.25,1,0.5,1),opacity 0.35s ease;opacity:0}
-.modal-overlay.open .modal-card{transform:translateY(0) scale(1);opacity:1}
+.modal-card{background:var(--color-white);border-radius:24px;max-width:580px;width:100%;max-height:92vh;overflow-y:auto;position:relative;box-shadow:0 30px 80px rgba(60,58,54,0.25);transform:none;transition:none;opacity:1;-webkit-overflow-scrolling:touch}
+.modal-overlay.open .modal-card{transform:none;opacity:1}
 .modal-header{padding:2rem 2rem 1rem;border-bottom:1px solid rgba(218,209,194,0.4);position:sticky;top:0;background:var(--color-white);z-index:10;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
 .modal-header::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--color-terracotta),var(--color-lavender),var(--color-sage));border-radius:24px 24px 0 0}
 .modal-title{font-family:var(--font-title);font-size:1.3rem;color:var(--color-carbon);line-height:1.3}
@@ -128,7 +124,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 .footer-brand{font-family:var(--font-handwritten);font-size:1.5rem;color:var(--color-beige);margin-bottom:0.5rem}
 .wave-divider{line-height:0;overflow:hidden}
 .wave-divider svg{display:block;width:100%}
-@media(max-width:640px){.hero-section{padding:2rem 0 3rem}.hero-form-card{padding:2rem 1.2rem}.modal-header{padding:1.5rem 1.2rem 1rem}.modal-body{padding:1rem 1.2rem 2rem}.hero-date-block{flex-direction:column;align-items:center}.cta-band{padding:3rem 0}.section-pad{padding:3.5rem 0}.sticky-bar{flex-direction:column;text-align:center}.sticky-bar-text{font-size:0.9rem}.hero-title{font-size:1.8rem}}
+@media(max-width:640px){.hero-section{padding:2rem 0 3rem}.hero-form-card{padding:2rem 1.2rem}.modal-overlay{align-items:flex-start;padding:0.5rem}.modal-card{max-height:calc(100dvh - 1rem);border-radius:18px}.modal-header{padding:1.35rem 1rem 0.9rem}.modal-header::after{border-radius:18px 18px 0 0}.modal-title{font-size:1.1rem}.modal-close{width:40px;height:40px}.modal-body{padding:1rem 1rem 1.5rem}.modal-body iframe{height:780px!important;min-height:780px}.hero-date-block{flex-direction:column;align-items:center}.cta-band{padding:3rem 0}.section-pad{padding:3.5rem 0}.sticky-bar{flex-direction:column;text-align:center}.sticky-bar-text{font-size:0.9rem}.hero-title{font-size:1.8rem}}
 </style>
 </head>
 <body>
@@ -141,15 +137,15 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 <!-- Sticky bar -->
 <div class="sticky-bar" id="stickyBar">
     <p class="sticky-bar-text">&#128197; Jueves 30 de julio &mdash; Clase <span>100&nbsp;% gratuita</span> &middot; Online y en vivo</p>
-    <button class="btn btn-primary btn-sm" onclick="openModal('sticky')" id="sticky-cta-btn">Reservar mi lugar &rarr;</button>
+    <button class="btn btn-primary btn-sm" type="button" data-modal-trigger="sticky" id="sticky-cta-btn">Reservar mi lugar &rarr;</button>
 </div>
 
 <!-- Modal -->
-<div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal-card">
         <div class="modal-header">
             <h2 class="modal-title" id="modalTitle">&#127881; &iexcl;Reserva tu lugar en la clase gratuita!</h2>
-            <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">&times;</button>
+            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">&times;</button>
         </div>
         <div class="modal-body">
             <p style="font-size:0.9rem;color:var(--color-carbon-light);margin-bottom:1.2rem;">
@@ -205,7 +201,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
         </div>
 
         <div class="fade-in" style="margin-bottom:2rem;">
-            <button class="btn btn-primary btn-xl btn-pulse" onclick="openModal('hero-top')" id="hero-top-cta-btn">
+            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="hero-top" id="hero-top-cta-btn">
                 &#127903; Quiero reservar mi lugar
             </button>
             <p class="btn-subtext">Sin costo &middot; Solo necesitas registrarte</p>
@@ -258,7 +254,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
         </ul>
 
         <div class="scroll-animate delay-2 text-center" style="margin-top:3rem;">
-            <button class="btn btn-primary btn-xl" onclick="openModal('narrative')" id="narrative-cta-btn">
+            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="narrative" id="narrative-cta-btn">
                 &#128073; Quiero asistir a la clase
             </button>
             <p class="btn-subtext">Reservar mi lugar gratuitamente &middot; 30 de julio</p>
@@ -343,7 +339,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
         <span class="cta-band-label">&iquest;Esta clase resuena contigo?</span>
         <h2 class="cta-band-title">Cada d&iacute;a m&aacute;s familias buscan respuestas,<br>pero muy pocas encuentran un espacio<br>donde tambi&eacute;n se sientan comprendidas.</h2>
         <p class="cta-band-sub">Si llegaste hasta aqu&iacute;, esta clase tiene algo para darte. Nos encantar&aacute; compartir este momento contigo.</p>
-        <button class="btn btn-primary btn-xl" onclick="openModal('cta-band')" id="cta-band-btn">
+        <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="cta-band" id="cta-band-btn">
             &#127903; Reservar mi lugar gratuitamente
         </button>
         <p style="margin-top:0.8rem;font-size:0.82rem;color:rgba(255,255,255,0.5);">Clase gratuita &middot; Jueves 30 de julio &middot; Online y en vivo</p>
@@ -404,7 +400,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
             </p>
         </div>
         <div class="scroll-animate delay-1" style="margin-top:2.5rem;">
-            <button class="btn btn-primary btn-xl btn-pulse" onclick="openModal('closing')" id="closing-cta-btn">
+            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="closing" id="closing-cta-btn">
                 &#127881; Quiero participar en la clase gratuita
             </button>
             <p class="btn-subtext">Jueves 30 de julio &middot; Sin costo &middot; Online y en vivo</p>
@@ -423,8 +419,35 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 <script>
 const modal = document.getElementById('registerModal');
-function openModal(src){ modal.classList.add('open'); document.body.style.overflow='hidden'; }
-function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+const modalCard = modal.querySelector('.modal-card');
+const firstModalInput = modal.querySelector('iframe');
+
+function openModal(src){
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    if(modalCard) modalCard.scrollTop = 0;
+    setTimeout(function(){ if(firstModalInput) firstModalInput.focus(); }, 50);
+}
+
+function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+}
+
+document.addEventListener('click',function(e){
+    const trigger = e.target.closest('[data-modal-trigger]');
+    if(!trigger) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openModal(trigger.getAttribute('data-modal-trigger') || 'cta');
+}, true);
+
+document.addEventListener('click',function(e){
+    if(e.target.closest('[data-modal-close]')) closeModal();
+});
+
 modal.addEventListener('click',function(e){ if(e.target===modal) closeModal(); });
 document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&modal.classList.contains('open')) closeModal(); });
 
@@ -437,8 +460,14 @@ stickyObs.observe(heroSection);
 
 const scrollObs = new IntersectionObserver(function(entries){
     entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('animated'); });
-},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+},{threshold:0});
 document.querySelectorAll('.scroll-animate').forEach(el=>scrollObs.observe(el));
+
+// Activate any elements already in view on load
+document.querySelectorAll('.scroll-animate').forEach(function(el){
+    var r = el.getBoundingClientRect();
+    if(r.top < window.innerHeight) el.classList.add('animated');
+});
 
 let exitShown = false;
 document.addEventListener('mouseleave',function(e){
