@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Tu registro está casi listo! Únete al grupo de WhatsApp de Sostener-nos para asegurar tu lugar en la clase gratuita del 30 de julio.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="¡Un último paso! — Clase Gratuita Sostener-nos">
+    <meta property="og:description" content="Únete al grupo de WhatsApp para asegurar tu lugar y recibir el acceso a la clase del 30 de julio.">
+    <title>¡Gracias por registrarte! — Sostener-nos</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+/* ── Variables ── */
+:root {
+    --c-terra:      #C27A5A;
+    --c-terra-lt:   #F9EFEA;
+    --c-beige:      #E7BFA3;
+    --c-sage:       #B9C6A1;
+    --c-sage-lt:    #F3F5EF;
+    --c-lavender:   #9A8FB4;
+    --c-lavender-lt:#F4F1F8;
+    --c-arena:      #DAD1C2;
+    --c-arena-lt:   #F6F4F0;
+    --c-carbon:     #3C3A36;
+    --c-carbon-2:   #5A5752;
+    --c-bg:         #FAF7F2;
+    --c-white:      #FFFFFF;
+    --c-wa:         #25D366;
+    --c-wa-dk:      #1DA851;
+    --c-wa-lt:      #E8FBF0;
+    --f-title: 'DM Serif Display', Georgia, serif;
+    --f-body:  'Poppins', system-ui, sans-serif;
+    --f-hand:  'Caveat', cursive;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+    font-family: var(--f-body); font-weight: 300; line-height: 1.7;
+    color: var(--c-carbon); background: var(--c-bg); overflow-x: hidden;
+}
+ul { list-style: none; }
+a  { text-decoration: none; color: inherit; }
+
+/* ── Layout ── */
+.container { width: 100%; max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+.text-center { text-align: center; }
+
+/* ── Buttons — no transitions, no transforms ── */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+    font-family: var(--f-body); font-weight: 600; border-radius: 50px; border: none;
+    cursor: pointer; line-height: 1.3; text-decoration: none;
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+    user-select: none; -webkit-user-select: none;
+}
+.btn-xl  { padding: 1.2rem 2.8rem; font-size: 1.1rem; }
+.btn-md  { padding: 1rem  2.2rem; font-size: 1rem; }
+.btn-wa  { background: var(--c-wa); color: var(--c-white); box-shadow: 0 4px 18px rgba(37,211,102,0.35); }
+.btn-wa-outline {
+    background: var(--c-white); color: var(--c-wa-dk);
+    border: 2px solid var(--c-wa); box-shadow: none;
+}
+.btn-share { background: var(--c-terra); color: var(--c-white); box-shadow: 0 4px 16px rgba(194,122,90,0.3); }
+.btn-note  { display: block; font-size: 0.78rem; font-weight: 400; color: var(--c-carbon-2); margin-top: 0.6rem; font-style: italic; pointer-events: none; }
+
+/* ── Hero / Banner ── */
+.hero {
+    background: linear-gradient(160deg, var(--c-terra-lt) 0%, var(--c-bg) 60%);
+    padding: 3.5rem 0 3rem;
+    border-bottom: 1px solid rgba(218,209,194,0.4);
+}
+.success-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: #E8FBF0; border: 1.5px solid rgba(37,211,102,0.4);
+    border-radius: 50px; padding: 0.45rem 1.1rem;
+    font-size: 0.82rem; font-weight: 600; color: #1A8744;
+    letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 1.5rem;
+}
+.hero-icon { font-size: 3rem; margin-bottom: 1rem; line-height: 1; }
+.hero-pre  { font-family: var(--f-hand); font-size: 1.4rem; color: var(--c-terra); margin-bottom: 0.4rem; display: block; }
+.hero-title {
+    font-family: var(--f-title); font-size: clamp(1.9rem, 5vw, 2.8rem);
+    line-height: 1.15; color: var(--c-carbon); margin-bottom: 1rem; font-weight: 400;
+}
+.hero-title em { font-style: italic; color: var(--c-terra); }
+.hero-lead {
+    font-size: clamp(0.95rem, 2.5vw, 1.08rem); color: var(--c-carbon-2);
+    max-width: 520px; margin: 0 auto 2.2rem; font-weight: 300; line-height: 1.75;
+}
+
+/* ── CTA block ── */
+.cta-block { margin-bottom: 0.5rem; }
+
+/* ── Why section ── */
+.why-section { padding: 3.5rem 0; background: var(--c-white); }
+.why-label {
+    font-family: var(--f-hand); font-size: 1.3rem; color: var(--c-terra);
+    margin-bottom: 0.5rem; display: block;
+}
+.why-title {
+    font-family: var(--f-title); font-size: clamp(1.4rem, 3.5vw, 2rem);
+    color: var(--c-carbon); line-height: 1.25; margin-bottom: 2.2rem;
+}
+.why-cards { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem; }
+.why-card {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.25rem 1.4rem;
+    background: var(--c-bg); border-radius: 16px;
+    border: 1px solid rgba(218,209,194,0.5);
+    border-left: 4px solid var(--c-terra);
+}
+.why-card:nth-child(2) { border-left-color: var(--c-lavender); }
+.why-card:nth-child(3) { border-left-color: var(--c-sage); }
+.why-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 0.05rem; line-height: 1; }
+.why-text { font-size: 0.97rem; color: var(--c-carbon); line-height: 1.65; }
+.why-text strong { color: var(--c-terra); font-weight: 600; display: block; margin-bottom: 0.2rem; }
+.why-card:nth-child(2) .why-text strong { color: var(--c-lavender); }
+.why-card:nth-child(3) .why-text strong { color: #6A8E60; }
+
+/* ── Details section ── */
+.details-section { padding: 3rem 0; background: var(--c-bg); }
+.details-title {
+    font-family: var(--f-title); font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: var(--c-carbon); margin-bottom: 1.5rem;
+}
+.details-card {
+    background: var(--c-white); border-radius: 20px;
+    border: 1px solid rgba(218,209,194,0.5);
+    padding: 2rem 2rem 1.75rem;
+    box-shadow: 0 4px 20px rgba(60,58,54,0.06);
+    position: relative; overflow: hidden;
+}
+.details-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--c-terra), var(--c-lavender), var(--c-sage));
+}
+.details-list { display: flex; flex-direction: column; gap: 1rem; }
+.detail-item { display: flex; align-items: flex-start; gap: 0.85rem; }
+.detail-emoji { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.2rem; }
+.detail-text  { font-size: 0.96rem; color: var(--c-carbon); line-height: 1.6; }
+.detail-text strong { font-weight: 600; color: var(--c-carbon); }
+.detail-text em { font-style: italic; color: var(--c-terra); }
+
+/* ── Share section ── */
+.share-section {
+    padding: 3rem 0;
+    background: linear-gradient(160deg, var(--c-lavender-lt) 0%, var(--c-bg) 100%);
+    border-top: 1px solid rgba(218,209,194,0.35);
+}
+.share-title {
+    font-family: var(--f-title); font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: var(--c-carbon); margin-bottom: 0.9rem;
+}
+.share-lead { font-size: 0.97rem; color: var(--c-carbon-2); margin-bottom: 2rem; line-height: 1.75; max-width: 520px; margin-left: auto; margin-right: auto; }
+
+/* ── Sign-off ── */
+.signoff-section { padding: 3rem 0 2rem; background: var(--c-white); border-top: 1px solid rgba(218,209,194,0.35); }
+.signoff-text { font-size: 1rem; color: var(--c-carbon-2); margin-bottom: 1.8rem; line-height: 1.8; }
+.signoff-name { font-family: var(--f-hand); font-size: 1.5rem; color: var(--c-terra); display: block; margin-bottom: 0.3rem; }
+.signoff-brand { font-family: var(--f-hand); font-size: 1.1rem; color: var(--c-carbon-2); }
+
+/* ── Footer ── */
+footer {
+    background: var(--c-carbon); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 1.75rem 1.5rem; font-size: 0.82rem;
+}
+footer .f-brand { font-family: var(--f-hand); font-size: 1.4rem; color: var(--c-beige); margin-bottom: 0.3rem; }
+
+/* ── Wave ── */
+.wave { line-height: 0; overflow: hidden; }
+.wave svg { display: block; width: 100%; }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+    .hero { padding: 2.5rem 0 2.5rem; }
+    .hero-title { font-size: 1.75rem; }
+    .details-card { padding: 1.5rem 1.25rem; }
+    .btn-xl { padding: 1.1rem 2rem; font-size: 1rem; }
+    .why-section, .details-section, .share-section, .signoff-section { padding: 2.5rem 0; }
+}
+    </style>
+</head>
+<body>
+
+<!-- ======== HERO ======== -->
+<section class="hero text-center">
+    <div class="container">
+
+        <div class="success-badge">&#10003;&nbsp; Registro recibido</div>
+
+        <div class="hero-icon">&#127881;</div>
+
+        <span class="hero-pre">¡Ya casi estás dentro!</span>
+        <h1 class="hero-title">
+            Un &uacute;ltimo paso para<br>completar tu registro
+        </h1>
+        <p class="hero-lead">
+            Para asegurar tu lugar y recibir el enlace de acceso a la clase, únete ahora al <strong>Grupo Oficial de WhatsApp</strong> de Sostener-nos.
+        </p>
+
+        <div class="cta-block">
+            <a  class="btn btn-wa btn-xl"
+                href="https://chat.whatsapp.com/D3iVdLOAWihIDDY0lrQZqo?s=cl&p=a&ilr=1&amv=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="hero-wa-btn">
+                &#128242; Unirme al grupo de WhatsApp y asegurar mi lugar
+            </a>
+            <span class="btn-note">Toca el botón para abrir WhatsApp y unirte al grupo oficial</span>
+        </div>
+
+    </div>
+</section>
+
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none" fill="#FFFFFF">
+        <path d="M0,20 C360,40 720,0 1080,25 C1260,38 1380,10 1440,20 L1440,40 L0,40 Z"/>
+    </svg>
+</div>
+
+<!-- ======== WHY ======== -->
+<section class="why-section">
+    <div class="container">
+
+        <div class="text-center" style="margin-bottom:2rem;">
+            <span class="why-label">¿Por qué es fundamental?</span>
+            <h2 class="why-title">Que estés en el grupo<br>es <em style="font-style:italic;color:var(--c-terra);">clave para tu experiencia</em></h2>
+        </div>
+
+        <div class="why-cards">
+            <div class="why-card">
+                <div class="why-icon">&#128274;</div>
+                <div class="why-text">
+                    <strong>Un espacio seguro y libre de spam</strong>
+                    Solo el equipo de Sostener-nos enviará información clave. Tu número permanecerá privado y no se compartirá con nadie.
+                </div>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">&#128161;</div>
+                <div class="why-text">
+                    <strong>Contenido de valor previo a la clase</strong>
+                    Prepararemos el terreno con reflexiones y herramientas exclusivas que te ayudarán a llegar con la mente y el corazón listos.
+                </div>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">&#128279;</div>
+                <div class="why-text">
+                    <strong>Enlace directo a la clase en vivo</strong>
+                    El jueves 30 de julio enviaremos por allí el acceso directo minutos antes de iniciar para que ingreses sin complicaciones.
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a  class="btn btn-wa-outline btn-md"
+                href="https://chat.whatsapp.com/D3iVdLOAWihIDDY0lrQZqo?s=cl&p=a&ilr=1&amv=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="why-wa-btn">
+                &#128073; Hacer clic aqu&iacute; para entrar al grupo de WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<div class="wave" style="background:var(--c-white);">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none" fill="#FAF7F2">
+        <path d="M0,15 C480,40 960,0 1440,20 L1440,40 L0,40 Z"/>
+    </svg>
+</div>
+
+<!-- ======== DETAILS ======== -->
+<section class="details-section">
+    <div class="container text-center">
+        <h2 class="details-title">Detalle de tu reserva</h2>
+        <div class="details-card" style="text-align:left;">
+            <ul class="details-list">
+                <li class="detail-item">
+                    <span class="detail-emoji">&#128204;</span>
+                    <p class="detail-text">
+                        <strong>Evento:</strong>
+                        Clase Online Gratuita <em>&#8220;Lo que nadie les explica a las familias despu&eacute;s de recibir un diagn&oacute;stico de neurodivergencia&#8221;</em>
+                    </p>
+                </li>
+                <li class="detail-item">
+                    <span class="detail-emoji">&#128197;</span>
+                    <p class="detail-text"><strong>Fecha:</strong> Jueves 30 de julio de 2026</p>
+                </li>
+                <li class="detail-item">
+                    <span class="detail-emoji">&#9200;</span>
+                    <p class="detail-text"><strong>Hora:</strong> 6:00 p.m. Colombia &middot; 8:00 p.m. Argentina</p>
+                </li>
+                <li class="detail-item">
+                    <span class="detail-emoji">&#128205;</span>
+                    <p class="detail-text"><strong>Modalidad:</strong> Online y en vivo</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="wave" style="background:var(--c-bg);">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none" fill="#F4F1F8">
+        <path d="M0,25 C360,5 720,40 1080,15 C1260,5 1380,35 1440,25 L1440,40 L0,40 Z"/>
+    </svg>
+</div>
+
+<!-- ======== SHARE ======== -->
+<section class="share-section text-center">
+    <div class="container">
+
+        <h2 class="share-title">&#128140; &iquest;Conoces a alguien m&aacute;s<br>que necesite este espacio?</h2>
+        <p class="share-lead">
+            Si tienes familiares, amigos o conocidos que también estén recorriendo este camino y buscando un lugar de comprensión y calma, puedes compartirles el enlace para que se registren.
+        </p>
+
+        <a  class="btn btn-share btn-md"
+            href="https://wa.me/?text=%C2%A1Encontr%C3%A9+un+espacio+muy+bonito+para+familias+de+personas+neurodivergentes%21+Es+una+clase+gratuita+de+Sostener-nos.+Reg%C3%ADstrate+aqu%C3%AD%3A+https%3A%2F%2Fsostener-nos-oferta-fundadores.vercel.app%2Fclase-gratis-uno.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="share-wa-btn">
+            &#128228; Compartir esta clase por WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<div class="wave" style="background:var(--c-lavender-lt);">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none" fill="#FFFFFF">
+        <path d="M0,10 C360,40 720,5 1080,30 C1260,42 1380,15 1440,10 L1440,40 L0,40 Z"/>
+    </svg>
+</div>
+
+<!-- ======== SIGN-OFF ======== -->
+<section class="signoff-section text-center">
+    <div class="container">
+        <p class="signoff-text">
+            Nos vemos muy pronto dentro del grupo.<br>
+            <br>
+            Con cari&ntilde;o,
+        </p>
+        <span class="signoff-name">Luz Ayda Mar&iacute;n &amp; Mauricio Mart&iacute;nez</span>
+        <span class="signoff-brand">Sostener-nos</span>
+    </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer>
+    <p class="f-brand">Sostener-nos</p>
+    <p>Un espacio donde ya no tienes que sostener esto a solas.</p>
+    <p style="margin-top:0.5rem;">&copy; 2026 Sostener-nos &middot; Luz Ayda Mar&iacute;n &amp; Mauricio Mart&iacute;nez</p>
+</footer>
+
+</body>
+</html>
