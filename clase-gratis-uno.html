@@ -3,171 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clase online gratuita para familias de personas neurodivergentes. Jueves 30 de julio de 2026 - Online y en vivo. Aprende a acompa&ntilde;ar con calma, conexi&oacute;n y esperanza.">
-    <meta name="keywords" content="clase gratuita, familias neurodivergentes, autismo, TDAH, diagnostico, acompanamiento emocional, Sostener-nos">
-    <meta name="author" content="Sostener-nos - Luz Ayda Marin y Mauricio Martinez">
+    <meta name="description" content="Clase online gratuita para familias de personas neurodivergentes. Jueves 30 de julio de 2026 — Online y en vivo.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Clase Gratuita: Lo que nadie les explica a las familias | Sostener-nos">
-    <meta property="og:description" content="Una clase gratuita para familias de personas neurodivergentes. Jueves 30 de julio - Online y en vivo.">
-    <meta property="og:image" content="assets/logo.png">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Una clase gratuita para familias de personas neurodivergentes. Jueves 30 de julio — Online y en vivo.">
     <title>Clase Online Gratuita | Lo que nadie les explica a las familias — Sostener-nos</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
     <style>
-:root{--color-terracotta:#C27A5A;--color-beige:#E7BFA3;--color-sage:#B9C6A1;--color-arena:#DAD1C2;--color-lavender:#9A8FB4;--color-carbon:#3C3A36;--color-bg-warm:#FAF7F2;--color-white:#FFFFFF;--color-carbon-light:#5A5752;--color-terracotta-light:#F9EFEA;--color-beige-light:#FBF4F0;--color-sage-light:#F3F5EF;--color-arena-light:#F6F4F0;--color-lavender-light:#F4F1F8;--font-title:'DM Serif Display',Georgia,serif;--font-body:'Poppins',system-ui,sans-serif;--font-handwritten:'Caveat',cursive;--shadow-soft:0 10px 30px rgba(60,58,54,0.05);--transition-smooth:all 0.4s cubic-bezier(0.25,1,0.5,1);--transition-fast:all 0.2s ease-in-out}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--font-body);font-weight:300;line-height:1.7;color:var(--color-carbon);background-color:var(--color-bg-warm);overflow-x:hidden}
-img{max-width:100%;height:auto;display:block}
-ul,ol{list-style:none}
-a{text-decoration:none;color:inherit;transition:var(--transition-fast)}
-button{font-family:inherit;border:none;background:none;cursor:pointer}
-.container{width:100%;max-width:780px;margin:0 auto;padding:0 1.5rem}
-.container-wide{width:100%;max-width:960px;margin:0 auto;padding:0 1.5rem}
-.text-center{text-align:center}
-.scroll-animate{opacity:0;transition:opacity 0.6s ease}
-.scroll-animate.animated{opacity:1}
-.delay-1{transition-delay:0.1s}.delay-2{transition-delay:0.2s}.delay-3{transition-delay:0.3s}.delay-4{transition-delay:0.4s}
-.fade-in{animation:fadeInUp 0.9s cubic-bezier(0.25,1,0.5,1) both}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.organic-bg-shapes{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;overflow:hidden}
-.shape-blob{position:absolute;opacity:0.06;filter:blur(30px);border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;animation:floatingBlob 30s infinite alternate ease-in-out;will-change:transform}
-.shape-blob-1{top:-60px;right:-80px;width:420px;height:420px;background:var(--color-beige);animation-duration:30s}
-.shape-blob-2{top:70vh;left:-120px;width:460px;height:460px;background:var(--color-sage);animation-duration:40s}
-@keyframes floatingBlob{0%{transform:translate(0,0) scale(1)}50%{transform:translate(25px,40px) scale(1.08)}100%{transform:translate(-15px,-25px) scale(0.94)}}
-.sticky-bar{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(250,247,242,0.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(218,209,194,0.3);padding:0.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;transition:var(--transition-smooth);transform:translateY(-100%);opacity:0}
-.sticky-bar.visible{transform:translateY(0);opacity:1}
-.sticky-bar-text{font-family:var(--font-title);font-size:1rem;color:var(--color-carbon);flex:1}
-.sticky-bar-text span{color:var(--color-terracotta)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;font-family:var(--font-body);font-weight:600;padding:1rem 2.2rem;border-radius:50px;font-size:1rem;letter-spacing:0.3px;border:none;cursor:pointer;text-decoration:none;line-height:1.3;-webkit-tap-highlight-color:transparent;touch-action:manipulation;position:relative;z-index:2;transform:none;transition:none}
-.btn-xl{padding:1.2rem 2.8rem;font-size:1.1rem}
-.btn-sm{padding:0.65rem 1.5rem;font-size:0.9rem}
-.btn-primary{background:linear-gradient(135deg,var(--color-terracotta) 0%,#A9634A 100%);color:var(--color-white);box-shadow:0 4px 18px rgba(194,122,90,0.3)}
-.btn-subtext{display:block;font-size:0.78rem;font-weight:400;color:var(--color-carbon-light);margin-top:0.5rem;text-align:center;font-style:italic}
-.hero-section{min-height:100vh;padding:3rem 0 4rem;display:flex;align-items:center;position:relative;overflow:hidden}
-.hero-inner{position:relative;z-index:1;text-align:center;width:100%}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;background:var(--color-terracotta-light);border:1px solid rgba(194,122,90,0.25);border-radius:50px;padding:0.4rem 1.1rem;font-size:0.8rem;font-weight:600;color:var(--color-terracotta);letter-spacing:0.8px;text-transform:uppercase;margin-bottom:1.5rem}
-.hero-eyebrow span{letter-spacing:0;text-transform:none;font-weight:500}
-.hero-class-label{font-family:var(--font-handwritten);font-size:1.5rem;color:var(--color-terracotta);margin-bottom:0.5rem;display:block}
-.hero-title{font-family:var(--font-title);font-size:clamp(2rem,5.5vw,3.2rem);line-height:1.15;color:var(--color-carbon);margin-bottom:1rem;font-weight:400}
-.hero-title em{font-style:italic;color:var(--color-terracotta)}
-.hero-subtitle{font-size:clamp(0.95rem,2.5vw,1.1rem);color:var(--color-carbon-light);max-width:560px;margin:0 auto 2rem;font-weight:300;font-style:italic;line-height:1.7}
-.hero-badges{display:flex;flex-wrap:wrap;gap:0.7rem;justify-content:center;margin-bottom:2.2rem}
-.badge-chip{display:inline-flex;align-items:center;gap:0.45rem;padding:0.5rem 1.1rem;border-radius:50px;font-size:0.85rem;font-weight:500;border:1.5px solid}
-.badge-green{background:#EEF7F0;color:#3A7D4B;border-color:rgba(58,125,75,0.25)}
-.badge-lavender{background:var(--color-lavender-light);color:#6A5F88;border-color:rgba(154,143,180,0.3)}
-.badge-terracotta{background:var(--color-terracotta-light);color:var(--color-terracotta);border-color:rgba(194,122,90,0.3)}
-.badge-dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:0.7;display:inline-block}
-.hero-date-block{display:flex;flex-wrap:wrap;gap:0.8rem 1.5rem;justify-content:center;margin-bottom:2.5rem}
-.date-item{display:flex;align-items:center;gap:0.5rem;font-size:0.95rem;font-weight:500;color:var(--color-carbon)}
-.date-item strong{color:var(--color-terracotta)}
-.hero-form-card{background:var(--color-white);border-radius:24px;box-shadow:0 20px 60px rgba(60,58,54,0.1),0 4px 20px rgba(194,122,90,0.06);padding:2.5rem 2rem;max-width:560px;margin:0 auto;border:1px solid rgba(218,209,194,0.4);position:relative;overflow:hidden}
-.hero-form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--color-terracotta),var(--color-lavender),var(--color-sage))}
-.form-card-title{font-family:var(--font-title);font-size:1.4rem;color:var(--color-carbon);margin-bottom:0.4rem}
-.form-card-sub{font-size:0.85rem;color:var(--color-carbon-light);margin-bottom:1.5rem}
-.form-wrapper{min-height:794px}
-.section-pad{padding:5rem 0}
-.section-label{font-family:var(--font-handwritten);font-size:1.3rem;color:var(--color-terracotta);margin-bottom:0.6rem;display:block}
-.section-title{font-family:var(--font-title);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--color-carbon);line-height:1.2;margin-bottom:1rem}
-.section-title em{font-style:italic;color:var(--color-terracotta)}
-.section-lead{font-size:1.05rem;color:var(--color-carbon-light);line-height:1.8;max-width:600px;margin:0 auto}
-.narrative-section{background:var(--color-white);position:relative}
-.narrative-inner{position:relative;z-index:1}
-.narrative-text{font-size:clamp(1rem,2.5vw,1.15rem);line-height:2;color:var(--color-carbon);font-weight:300}
-.narrative-text p{margin-bottom:1.2rem}
-.narrative-highlight{font-family:var(--font-title);font-size:clamp(1.3rem,3.5vw,1.8rem);color:var(--color-carbon);line-height:1.3;font-style:italic;margin:2.5rem 0;padding:2rem;border-left:4px solid var(--color-terracotta);background:var(--color-terracotta-light);border-radius:0 16px 16px 0;text-align:left}
-.pain-list{display:flex;flex-direction:column;gap:0.85rem;margin:2rem 0}
-.pain-item{display:flex;align-items:flex-start;gap:0.85rem;padding:1rem 1.2rem;background:var(--color-arena-light);border-radius:12px;border-left:3px solid var(--color-arena)}
-.pain-item:hover{border-left-color:var(--color-terracotta);background:var(--color-terracotta-light)}
-.pain-item-icon{font-size:1.1rem;flex-shrink:0;margin-top:0.1rem}
-.pain-item-text{font-size:0.95rem;color:var(--color-carbon);line-height:1.6}
-.cta-band{background:linear-gradient(135deg,var(--color-carbon) 0%,#2A2926 100%);padding:4rem 0;position:relative;overflow:hidden}
-.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(194,122,90,0.2) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(154,143,180,0.15) 0%,transparent 55%)}
-.cta-band-inner{position:relative;z-index:1;text-align:center}
-.cta-band-label{font-family:var(--font-handwritten);font-size:1.3rem;color:var(--color-beige);margin-bottom:0.6rem;display:block}
-.cta-band-title{font-family:var(--font-title);font-size:clamp(1.5rem,3.5vw,2.2rem);color:var(--color-white);margin-bottom:1rem;line-height:1.25}
-.cta-band-sub{font-size:1rem;color:rgba(255,255,255,0.7);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto}
-.transformation-section{background:var(--color-sage-light);position:relative}
-.transformation-inner{position:relative;z-index:1}
-.benefits-section{background:var(--color-white)}
-.benefits-grid{display:flex;flex-direction:column;gap:1rem;margin-top:2.5rem}
-.benefit-card{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;background:var(--color-bg-warm);border-radius:14px;border:1px solid rgba(218,209,194,0.5);transition:border-color 0.2s ease}
-.benefit-card:hover{border-color:var(--color-terracotta)}
-.benefit-icon{width:36px;height:36px;border-radius:50%;background:var(--color-terracotta);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;color:white}
-.benefit-icon-sage{background:var(--color-sage)}
-.benefit-icon-lavender{background:var(--color-lavender)}
-.benefit-icon-arena{background:var(--color-arena);color:var(--color-carbon)}
-.benefit-text{font-size:0.97rem;color:var(--color-carbon);line-height:1.65;padding-top:0.4rem}
-.benefit-text strong{color:var(--color-terracotta);font-weight:600}
-.for-you-section{background:linear-gradient(160deg,var(--color-lavender-light) 0%,var(--color-beige-light) 100%);position:relative}
-.for-you-cards{display:flex;flex-direction:column;gap:0.9rem;margin-top:2.5rem}
-.for-you-item{display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.3rem;background:var(--color-white);border-radius:14px;border:1px solid rgba(154,143,180,0.2);box-shadow:var(--shadow-soft)}
-.for-you-item:hover{border-color:var(--color-lavender)}
-.for-you-check{width:26px;height:26px;border-radius:50%;background:var(--color-lavender);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:0.8rem;font-weight:700;margin-top:0.1rem}
-.for-you-text{font-size:0.96rem;color:var(--color-carbon);line-height:1.65}
-.closing-section{background:var(--color-white);text-align:center}
-.modal-overlay{position:fixed;inset:0;background:rgba(60,58,54,0.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:9000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:none}
-.modal-overlay.open{opacity:1;pointer-events:all}
-.modal-card{background:var(--color-white);border-radius:24px;max-width:580px;width:100%;max-height:92vh;overflow-y:auto;position:relative;box-shadow:0 30px 80px rgba(60,58,54,0.25);transform:none;transition:none;opacity:1;-webkit-overflow-scrolling:touch}
-.modal-overlay.open .modal-card{transform:none;opacity:1}
-.modal-header{padding:2rem 2rem 1rem;border-bottom:1px solid rgba(218,209,194,0.4);position:sticky;top:0;background:var(--color-white);z-index:10;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
-.modal-header::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--color-terracotta),var(--color-lavender),var(--color-sage));border-radius:24px 24px 0 0}
-.modal-title{font-family:var(--font-title);font-size:1.3rem;color:var(--color-carbon);line-height:1.3}
-.modal-close{width:36px;height:36px;border-radius:50%;background:var(--color-arena-light);border:1px solid rgba(218,209,194,0.5);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--color-carbon-light);flex-shrink:0;cursor:pointer;transition:var(--transition-fast)}
-.modal-close:hover{background:var(--color-terracotta-light);color:var(--color-terracotta)}
-.modal-body{padding:1.5rem 2rem 2.5rem}
-.landing-footer{background:var(--color-carbon);color:rgba(255,255,255,0.65);text-align:center;padding:2rem 1.5rem;font-size:0.83rem}
-.landing-footer a{color:var(--color-beige)}
-.footer-brand{font-family:var(--font-handwritten);font-size:1.5rem;color:var(--color-beige);margin-bottom:0.5rem}
-.wave-divider{line-height:0;overflow:hidden}
-.wave-divider svg{display:block;width:100%}
-@media(max-width:640px){.hero-section{padding:2rem 0 3rem}.hero-form-card{padding:2rem 1.2rem}.modal-overlay{align-items:flex-start;padding:0.5rem}.modal-card{max-height:calc(100dvh - 1rem);border-radius:18px}.modal-header{padding:1.35rem 1rem 0.9rem}.modal-header::after{border-radius:18px 18px 0 0}.modal-title{font-size:1.1rem}.modal-close{width:40px;height:40px}.modal-body{padding:1rem 1rem 1.5rem}.modal-body iframe{height:780px!important;min-height:780px}.hero-date-block{flex-direction:column;align-items:center}.cta-band{padding:3rem 0}.section-pad{padding:3.5rem 0}.sticky-bar{flex-direction:column;text-align:center}.sticky-bar-text{font-size:0.9rem}.hero-title{font-size:1.8rem}}
-</style>
+/* ── Variables ── */
+:root {
+    --c-terra: #C27A5A;
+    --c-terra-dk: #A9634A;
+    --c-terra-lt: #F9EFEA;
+    --c-beige: #E7BFA3;
+    --c-sage: #B9C6A1;
+    --c-sage-lt: #F3F5EF;
+    --c-lavender: #9A8FB4;
+    --c-lavender-lt: #F4F1F8;
+    --c-arena: #DAD1C2;
+    --c-arena-lt: #F6F4F0;
+    --c-carbon: #3C3A36;
+    --c-carbon-2: #5A5752;
+    --c-bg: #FAF7F2;
+    --c-white: #FFFFFF;
+    --f-title: 'DM Serif Display', Georgia, serif;
+    --f-body: 'Poppins', system-ui, sans-serif;
+    --f-hand: 'Caveat', cursive;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--f-body); font-weight: 300; line-height: 1.7; color: var(--c-carbon); background: var(--c-bg); overflow-x: hidden; }
+ul, ol { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ── Layout ── */
+.container { width: 100%; max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+.container-wide { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+.text-center { text-align: center; }
+.section-pad { padding: 5rem 0; }
+
+/* ── Typography helpers ── */
+.section-label { font-family: var(--f-hand); font-size: 1.3rem; color: var(--c-terra); margin-bottom: 0.5rem; display: block; }
+.section-title { font-family: var(--f-title); font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--c-carbon); line-height: 1.2; margin-bottom: 1rem; }
+.section-title em { font-style: italic; color: var(--c-terra); }
+.section-lead { font-size: 1.05rem; color: var(--c-carbon-2); line-height: 1.8; max-width: 600px; margin: 0 auto; }
+
+/* ── Buttons — NO transitions, NO transforms ── */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    font-family: var(--f-body); font-weight: 600; border-radius: 50px; border: none;
+    cursor: pointer; text-decoration: none; line-height: 1.3; user-select: none;
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+}
+.btn-xl { padding: 1.2rem 2.8rem; font-size: 1.1rem; }
+.btn-md { padding: 1rem 2.2rem; font-size: 1rem; }
+.btn-sm { padding: 0.65rem 1.5rem; font-size: 0.9rem; }
+.btn-primary {
+    background: var(--c-terra);
+    color: var(--c-white);
+    box-shadow: 0 4px 16px rgba(194,122,90,0.35);
+}
+.btn-subtext { display: block; font-size: 0.78rem; font-weight: 400; color: var(--c-carbon-2); margin-top: 0.6rem; text-align: center; font-style: italic; }
+
+/* ── Sticky bar ── */
+.sticky-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+    background: rgba(250,247,242,0.97); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(218,209,194,0.4);
+    padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    transform: translateY(-100%); transition: transform 0.3s ease; opacity: 1;
+}
+.sticky-bar.visible { transform: translateY(0); }
+.sticky-bar-text { font-family: var(--f-title); font-size: 1rem; color: var(--c-carbon); flex: 1; }
+.sticky-bar-text span { color: var(--c-terra); }
+
+/* ── Modal ── */
+.modal-overlay {
+    position: fixed; inset: 0; z-index: 9000;
+    background: rgba(60,58,54,0.75);
+    display: flex; align-items: center; justify-content: center; padding: 1rem;
+    visibility: hidden; opacity: 0;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.modal-overlay.open { visibility: visible; opacity: 1; }
+.modal-card {
+    background: var(--c-white); border-radius: 20px;
+    max-width: 580px; width: 100%; max-height: 90vh;
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+    box-shadow: 0 20px 60px rgba(60,58,54,0.3);
+}
+.modal-header {
+    padding: 1.5rem 1.5rem 1rem; display: flex; align-items: flex-start;
+    justify-content: space-between; gap: 1rem;
+    border-bottom: 1px solid rgba(218,209,194,0.4);
+    position: sticky; top: 0; background: var(--c-white); z-index: 1;
+    border-radius: 20px 20px 0 0;
+    border-top: 4px solid var(--c-terra);
+}
+.modal-title { font-family: var(--f-title); font-size: 1.25rem; color: var(--c-carbon); line-height: 1.3; }
+.modal-close {
+    width: 36px; height: 36px; min-width: 36px; border-radius: 50%;
+    background: var(--c-arena-lt); border: 1px solid var(--c-arena);
+    font-size: 1.3rem; color: var(--c-carbon-2); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+}
+.modal-body { padding: 1.2rem 1.5rem 2rem; }
+.modal-date { font-size: 0.9rem; color: var(--c-carbon-2); margin-bottom: 1rem; }
+.form-placeholder {
+    min-height: 100px; display: flex; align-items: center; justify-content: center;
+    font-size: 0.95rem; color: var(--c-carbon-2); padding: 1rem 0;
+}
+#modal-form-container iframe {
+    width: 100%; border: none; border-radius: 4px; display: block;
+    min-height: 700px;
+}
+
+/* ── Hero ── */
+.hero-section { min-height: 100vh; padding: 3.5rem 0 4rem; display: flex; align-items: center; background: var(--c-bg); }
+.hero-inner { text-align: center; width: 100%; }
+.hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--c-terra-lt); border: 1px solid rgba(194,122,90,0.25);
+    border-radius: 50px; padding: 0.4rem 1.1rem; font-size: 0.8rem;
+    font-weight: 600; color: var(--c-terra); letter-spacing: 0.7px;
+    text-transform: uppercase; margin-bottom: 1.5rem;
+}
+.hero-eyebrow span { letter-spacing: 0; text-transform: none; font-weight: 500; }
+.hero-title { font-family: var(--f-title); font-size: clamp(2rem, 5.5vw, 3.2rem); line-height: 1.15; color: var(--c-carbon); margin-bottom: 1rem; font-weight: 400; }
+.hero-title em { font-style: italic; color: var(--c-terra); }
+.hero-subtitle { font-size: clamp(0.95rem, 2.5vw, 1.1rem); color: var(--c-carbon-2); max-width: 560px; margin: 0 auto 2rem; font-weight: 300; font-style: italic; line-height: 1.7; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: 2rem; }
+.badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 1rem; border-radius: 50px; font-size: 0.82rem; font-weight: 500; border: 1.5px solid; }
+.badge-green { background: #EEF7F0; color: #3A7D4B; border-color: rgba(58,125,75,0.25); }
+.badge-lavender { background: var(--c-lavender-lt); color: #6A5F88; border-color: rgba(154,143,180,0.3); }
+.badge-terra { background: var(--c-terra-lt); color: var(--c-terra); border-color: rgba(194,122,90,0.3); }
+.badge-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.7; }
+.hero-date-block { display: flex; flex-wrap: wrap; gap: 0.7rem 1.5rem; justify-content: center; margin-bottom: 2.5rem; }
+.date-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; font-weight: 500; color: var(--c-carbon); }
+.date-item strong { color: var(--c-terra); }
+
+/* ── Wave ── */
+.wave-divider { line-height: 0; overflow: hidden; }
+.wave-divider svg { display: block; width: 100%; }
+
+/* ── Narrative ── */
+.narrative-section { background: var(--c-white); }
+.narrative-text { font-size: clamp(1rem, 2.5vw, 1.12rem); line-height: 2; color: var(--c-carbon); font-weight: 300; }
+.narrative-text p { margin-bottom: 1.2rem; }
+.narrative-highlight {
+    font-family: var(--f-title); font-size: clamp(1.2rem, 3vw, 1.7rem); color: var(--c-carbon);
+    line-height: 1.35; font-style: italic; margin: 2.5rem 0; padding: 1.75rem 2rem;
+    border-left: 4px solid var(--c-terra); background: var(--c-terra-lt); border-radius: 0 16px 16px 0;
+}
+.pain-list { display: flex; flex-direction: column; gap: 0.8rem; margin: 2rem 0; }
+.pain-item { display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.9rem 1.1rem; background: var(--c-arena-lt); border-radius: 12px; border-left: 3px solid var(--c-arena); }
+.pain-item-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+.pain-item-text { font-size: 0.93rem; color: var(--c-carbon); line-height: 1.6; }
+
+/* ── Transformation ── */
+.transformation-section { background: var(--c-sage-lt); }
+.transformation-card { background: var(--c-white); border-radius: 18px; padding: 2rem; border: 1px solid rgba(185,198,161,0.4); text-align: center; max-width: 600px; margin: 2rem auto 0; }
+
+/* ── Benefits ── */
+.benefits-section { background: var(--c-white); }
+.benefits-grid { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem; }
+.benefit-card { display: flex; align-items: flex-start; gap: 1rem; padding: 1.1rem 1.3rem; background: var(--c-bg); border-radius: 14px; border: 1px solid rgba(218,209,194,0.5); }
+.benefit-icon { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color: white; }
+.bi-terra { background: var(--c-terra); }
+.bi-lavender { background: var(--c-lavender); }
+.bi-sage { background: var(--c-sage); color: var(--c-carbon); }
+.bi-arena { background: var(--c-arena); color: var(--c-carbon); }
+.benefit-text { font-size: 0.95rem; color: var(--c-carbon); line-height: 1.65; padding-top: 0.35rem; }
+.benefit-text strong { color: var(--c-terra); font-weight: 600; }
+
+/* ── CTA Band ── */
+.cta-band { background: linear-gradient(135deg, var(--c-carbon) 0%, #2A2926 100%); padding: 4rem 0; }
+.cta-band-inner { text-align: center; }
+.cta-band-label { font-family: var(--f-hand); font-size: 1.3rem; color: var(--c-beige); margin-bottom: 0.5rem; display: block; }
+.cta-band-title { font-family: var(--f-title); font-size: clamp(1.4rem, 3.5vw, 2.1rem); color: var(--c-white); margin-bottom: 1rem; line-height: 1.3; }
+.cta-band-sub { font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+.cta-band-note { margin-top: 0.8rem; font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+
+/* ── For You ── */
+.for-you-section { background: linear-gradient(160deg, var(--c-lavender-lt) 0%, #FBF4F0 100%); }
+.for-you-cards { display: flex; flex-direction: column; gap: 0.85rem; margin-top: 2.5rem; }
+.for-you-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 1.25rem; background: var(--c-white); border-radius: 14px; border: 1px solid rgba(154,143,180,0.2); }
+.for-you-check { width: 26px; height: 26px; min-width: 26px; border-radius: 50%; background: var(--c-lavender); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.78rem; font-weight: 700; margin-top: 0.15rem; }
+.for-you-text { font-size: 0.95rem; color: var(--c-carbon); line-height: 1.65; }
+
+/* ── Closing ── */
+.closing-section { background: var(--c-white); text-align: center; }
+
+/* ── Footer ── */
+.landing-footer { background: var(--c-carbon); color: rgba(255,255,255,0.6); text-align: center; padding: 2rem 1.5rem; font-size: 0.83rem; }
+.footer-brand { font-family: var(--f-hand); font-size: 1.5rem; color: var(--c-beige); margin-bottom: 0.4rem; }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+    .hero-section { padding: 2rem 0 3rem; }
+    .hero-date-block { flex-direction: column; align-items: center; }
+    .section-pad { padding: 3.5rem 0; }
+    .cta-band { padding: 3rem 0; }
+    .sticky-bar { flex-direction: column; text-align: center; padding: 0.6rem 1rem; }
+    .sticky-bar-text { font-size: 0.88rem; }
+    .hero-title { font-size: 1.75rem; }
+    .modal-overlay { align-items: flex-start; padding: 0.5rem; }
+    .modal-card { max-height: calc(100dvh - 1rem); border-radius: 16px; }
+    .modal-header { padding: 1.25rem 1rem 0.9rem; border-radius: 16px 16px 0 0; }
+    .modal-body { padding: 1rem 1rem 1.5rem; }
+    #modal-form-container iframe { min-height: 720px; }
+}
+    </style>
 </head>
 <body>
-
-<div class="organic-bg-shapes" aria-hidden="true">
-    <div class="shape-blob shape-blob-1"></div>
-    <div class="shape-blob shape-blob-2"></div>
-</div>
 
 <!-- Sticky bar -->
 <div class="sticky-bar" id="stickyBar">
     <p class="sticky-bar-text">&#128197; Jueves 30 de julio &mdash; Clase <span>100&nbsp;% gratuita</span> &middot; Online y en vivo</p>
-    <button class="btn btn-primary btn-sm" type="button" data-modal-trigger="sticky" id="sticky-cta-btn">Reservar mi lugar &rarr;</button>
+    <button class="btn btn-primary btn-sm" type="button" onclick="openModal()" id="sticky-cta-btn">Reservar mi lugar &rarr;</button>
 </div>
 
 <!-- Modal -->
-<div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+<div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-card">
         <div class="modal-header">
             <h2 class="modal-title" id="modalTitle">&#127881; &iexcl;Reserva tu lugar en la clase gratuita!</h2>
-            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">&times;</button>
+            <button class="modal-close" type="button" onclick="closeModal()" aria-label="Cerrar">&times;</button>
         </div>
         <div class="modal-body">
-            <p style="font-size:0.9rem;color:var(--color-carbon-light);margin-bottom:1.2rem;">
-                &#128197; <strong>Jueves 30 de julio de 2026</strong> &middot; 6:00 p.m. Colombia / 8:00 p.m. Argentina
-            </p>
-            <iframe
-    src="https://api.leadconnectorhq.com/widget/form/SW2pzQCpcwySpwXo4j51"
-    style="width:100%;height:794px;border:none;border-radius:3px;"
-    id="popup-form-SW2pzQCpcwySpwXo4j51"
-    data-layout="{'id':'INLINE'}"
-    data-trigger-type="alwaysShow"
-    data-trigger-value=""
-    data-activation-type="alwaysActivated"
-    data-activation-value=""
-    data-deactivation-type="neverDeactivate"
-    data-deactivation-value=""
-    data-form-name="Form Capatacion 1 clase 30 julio"
-    data-height="794"
-    data-layout-iframe-id="popup-form-SW2pzQCpcwySpwXo4j51"
-    data-form-id="SW2pzQCpcwySpwXo4j51"
-    title="Form Capatacion 1 clase 30 julio">
-</iframe>
+            <p class="modal-date">&#128197; <strong>Jueves 30 de julio de 2026</strong> &middot; 6:00 p.m. Colombia / 8:00 p.m. Argentina</p>
+            <div id="modal-form-container">
+                <p class="form-placeholder" id="form-loading-msg">Cargando formulario...</p>
+            </div>
         </div>
     </div>
 </div>
@@ -178,34 +251,32 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 <section class="hero-section" id="hero">
     <div class="container hero-inner">
 
-        <div class="hero-eyebrow fade-in">&#10024; <span>Clase Online Gratuita &mdash; Sostener-nos</span></div>
+        <div class="hero-eyebrow">&#10024; <span>Clase Online Gratuita &mdash; Sostener-nos</span></div>
 
-        <h1 class="hero-title fade-in">
+        <h1 class="hero-title">
             Lo que nadie les explica a las familias<br>
             despu&eacute;s de recibir un <em>diagn&oacute;stico<br>de neurodivergencia</em>
         </h1>
-        <p class="hero-subtitle fade-in">
+        <p class="hero-subtitle">
             &hellip;y c&oacute;mo comenzar a comprender a la persona m&aacute;s all&aacute; de esa etiqueta para acompa&ntilde;arla con m&aacute;s calma, conexi&oacute;n y esperanza.
         </p>
 
-        <div class="hero-badges fade-in">
-            <span class="badge-chip badge-green"><span class="badge-dot"></span>&nbsp; Clase 100&nbsp;% gratuita</span>
-            <span class="badge-chip badge-lavender">&#128106; Dirigida a familias de personas neurodivergentes</span>
-            <span class="badge-chip badge-terracotta">&#128187; Online y en vivo</span>
+        <div class="hero-badges">
+            <span class="badge badge-green"><span class="badge-dot"></span>&nbsp; Clase 100&nbsp;% gratuita</span>
+            <span class="badge badge-lavender">&#128106; Dirigida a familias de personas neurodivergentes</span>
+            <span class="badge badge-terra">&#128187; Online y en vivo</span>
         </div>
 
-        <div class="hero-date-block fade-in">
+        <div class="hero-date-block">
             <div class="date-item"><span>&#128197;</span><span>Jueves <strong>30 de julio de 2026</strong></span></div>
             <div class="date-item"><span>&#128565;</span><span><strong>6:00 p.m.</strong> Colombia &middot; <strong>8:00 p.m.</strong> Argentina</span></div>
             <div class="date-item"><span>&#128187;</span><span><strong>Online y en vivo</strong></span></div>
         </div>
 
-        <div class="fade-in" style="margin-bottom:2rem;">
-            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="hero-top" id="hero-top-cta-btn">
-                &#127903; Quiero reservar mi lugar
-            </button>
-            <p class="btn-subtext">Sin costo &middot; Solo necesitas registrarte</p>
-        </div>
+        <button class="btn btn-primary btn-xl" type="button" onclick="openModal()" id="hero-cta-btn">
+            &#127903; Quiero reservar mi lugar
+        </button>
+        <p class="btn-subtext">Sin costo &middot; Solo necesitas registrarte</p>
 
     </div>
 </section>
@@ -218,14 +289,14 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 
 <!-- ======== NARRATIVE ======== -->
 <section class="narrative-section section-pad" id="narrative">
-    <div class="container narrative-inner">
+    <div class="container">
 
-        <div class="scroll-animate text-center" style="margin-bottom:2.5rem;">
+        <div class="text-center" style="margin-bottom:2.5rem;">
             <span class="section-label">Para ti que recorres este camino...</span>
             <h2 class="section-title">Tal vez nadie te prepar&oacute;<br>para lo que vino <em>despu&eacute;s</em>.</h2>
         </div>
 
-        <div class="narrative-text scroll-animate">
+        <div class="narrative-text">
             <p>Recibir un diagn&oacute;stico puede responder muchas preguntas.</p>
             <p>Pero tambi&eacute;n puede abrir muchas otras.</p>
             <p>De repente aparecen nuevas emociones, nuevas dudas y una sensaci&oacute;n de incertidumbre para la que muy pocas familias se sienten realmente preparadas.</p>
@@ -233,16 +304,16 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
             <p>Y mientras intentas comprender qu&eacute; necesita esa persona que tanto amas&hellip;</p>
         </div>
 
-        <div class="narrative-highlight scroll-animate delay-1">
+        <div class="narrative-highlight">
             Poco a poco comienzas a olvidar c&oacute;mo est&aacute;s <em>t&uacute;</em>.
         </div>
 
-        <div class="narrative-text scroll-animate delay-1">
+        <div class="narrative-text">
             <p>Porque casi todo el mundo habla del diagn&oacute;stico.<br>Pero muy pocos hablan de <strong>lo que vive la familia</strong>.</p>
             <p>Muy pocas veces alguien explica&hellip;</p>
         </div>
 
-        <ul class="pain-list scroll-animate delay-2">
+        <ul class="pain-list">
             <li class="pain-item"><span class="pain-item-icon">&#128532;</span><span class="pain-item-text">C&oacute;mo afrontar el <strong>miedo al futuro</strong>.</span></li>
             <li class="pain-item"><span class="pain-item-icon">&#128161;</span><span class="pain-item-text">C&oacute;mo gestionar la <strong>culpa</strong> por sentir que podr&iacute;as hacerlo mejor.</span></li>
             <li class="pain-item"><span class="pain-item-icon">&#129309;</span><span class="pain-item-text">C&oacute;mo <strong>acompa&ntilde;ar sin intentar cambiar</strong> a la persona.</span></li>
@@ -253,8 +324,8 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
             <li class="pain-item"><span class="pain-item-icon">&#129464;</span><span class="pain-item-text">Y, sobre todo&hellip; c&oacute;mo volver a encontrar un poco de <strong>calma</strong> en medio de todo este proceso.</span></li>
         </ul>
 
-        <div class="scroll-animate delay-2 text-center" style="margin-top:3rem;">
-            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="narrative" id="narrative-cta-btn">
+        <div class="text-center" style="margin-top:3rem;">
+            <button class="btn btn-primary btn-xl" type="button" onclick="openModal()" id="narrative-cta-btn">
                 &#128073; Quiero asistir a la clase
             </button>
             <p class="btn-subtext">Reservar mi lugar gratuitamente &middot; 30 de julio</p>
@@ -271,21 +342,21 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 
 <!-- ======== TRANSFORMATION ======== -->
 <section class="transformation-section section-pad" id="transformation">
-    <div class="container transformation-inner">
-        <div class="scroll-animate text-center" style="margin-bottom:2.5rem;">
+    <div class="container">
+        <div class="text-center" style="margin-bottom:2rem;">
             <span class="section-label">Lo que transforma todo</span>
             <h2 class="section-title">Hay algo que puede cambiar por completo<br>la forma en que <em>vives esta experiencia</em>.</h2>
         </div>
-        <div class="narrative-text scroll-animate text-center" style="max-width:600px;margin:0 auto 2.5rem;">
+        <div class="narrative-text text-center" style="max-width:600px;margin:0 auto;">
             <p>Un diagn&oacute;stico puede ponerle nombre a muchas cosas.</p>
             <p>Pero comprender verdaderamente a la persona&hellip;</p>
             <p>Es lo que transforma la manera de acompa&ntilde;arla.</p>
             <p>Y cuando esa comprensi&oacute;n llega&hellip;</p>
-            <p style="font-family:var(--font-title);font-size:1.3rem;color:var(--color-carbon);font-style:italic;">Tambi&eacute;n cambia la forma en que la familia vive este camino.</p>
+            <p style="font-family:var(--f-title);font-size:1.25rem;color:var(--c-carbon);font-style:italic;">Tambi&eacute;n cambia la forma en que la familia vive este camino.</p>
         </div>
-        <div class="scroll-animate delay-1" style="background:var(--color-white);border-radius:20px;padding:2rem;border:1px solid rgba(185,198,161,0.4);box-shadow:var(--shadow-soft);text-align:center;max-width:600px;margin:0 auto;">
-            <span style="font-family:var(--font-handwritten);font-size:1.3rem;color:var(--color-sage);display:block;margin-bottom:0.5rem;">Ese ser&aacute; el prop&oacute;sito de esta clase.</span>
-            <p style="font-size:1rem;color:var(--color-carbon-light);">Una clase gratuita para familias de personas neurodivergentes que desean comprender mejor lo que est&aacute;n viviendo y descubrir una forma m&aacute;s humana de recorrer este camino.</p>
+        <div class="transformation-card">
+            <span style="font-family:var(--f-hand);font-size:1.3rem;color:var(--c-sage);display:block;margin-bottom:0.5rem;">Ese ser&aacute; el prop&oacute;sito de esta clase.</span>
+            <p style="font-size:1rem;color:var(--c-carbon-2);">Una clase gratuita para familias de personas neurodivergentes que desean comprender mejor lo que est&aacute;n viviendo y descubrir una forma m&aacute;s humana de recorrer este camino.</p>
         </div>
     </div>
 </section>
@@ -299,34 +370,34 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 <!-- ======== BENEFITS ======== -->
 <section class="benefits-section section-pad" id="benefits">
     <div class="container">
-        <div class="scroll-animate text-center" style="margin-bottom:0.5rem;">
+        <div class="text-center" style="margin-bottom:0.5rem;">
             <span class="section-label">Lo que aprender&aacute;s</span>
             <h2 class="section-title">En esta clase gratuita <em>descubrir&aacute;s</em>...</h2>
             <p class="section-lead" style="margin-top:0.8rem;">Contenido dise&ntilde;ado para transformar la forma en que vives y entiendes este proceso.</p>
         </div>
-        <div class="benefits-grid scroll-animate delay-1">
+        <div class="benefits-grid">
             <div class="benefit-card">
-                <div class="benefit-icon">&#9989;</div>
+                <div class="benefit-icon bi-terra">&#9989;</div>
                 <p class="benefit-text">Por qu&eacute; <strong>el diagn&oacute;stico es solo el comienzo</strong> de un proceso mucho m&aacute;s profundo para toda la familia.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon benefit-icon-lavender">&#9989;</div>
+                <div class="benefit-icon bi-lavender">&#9989;</div>
                 <p class="benefit-text">C&oacute;mo pasar de centrarte &uacute;nicamente en una etiqueta a <strong>comprender mejor a la persona</strong> y su forma de experimentar el mundo.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon benefit-icon-sage">&#9989;</div>
+                <div class="benefit-icon bi-sage">&#9989;</div>
                 <p class="benefit-text">Los <strong>desaf&iacute;os emocionales</strong> que viven muchas familias y de los que casi nadie habla.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon benefit-icon-arena">&#9989;</div>
+                <div class="benefit-icon bi-arena">&#9989;</div>
                 <p class="benefit-text">Por qu&eacute; muchas personas <strong>siguen sinti&eacute;ndose agotadas</strong> incluso despu&eacute;s de asistir a terapias, leer libros y buscar informaci&oacute;n durante meses.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon">&#9989;</div>
+                <div class="benefit-icon bi-terra">&#9989;</div>
                 <p class="benefit-text">Qu&eacute; necesitan realmente las familias para acompa&ntilde;ar con mayor <strong>comprensi&oacute;n, calma y conexi&oacute;n</strong>.</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon benefit-icon-lavender">&#9989;</div>
+                <div class="benefit-icon bi-lavender">&#9989;</div>
                 <p class="benefit-text">C&oacute;mo empezar a construir una <strong>red de apoyo</strong> donde tambi&eacute;n haya espacio para cuidar de quienes cuidan.</p>
             </div>
         </div>
@@ -339,21 +410,21 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
         <span class="cta-band-label">&iquest;Esta clase resuena contigo?</span>
         <h2 class="cta-band-title">Cada d&iacute;a m&aacute;s familias buscan respuestas,<br>pero muy pocas encuentran un espacio<br>donde tambi&eacute;n se sientan comprendidas.</h2>
         <p class="cta-band-sub">Si llegaste hasta aqu&iacute;, esta clase tiene algo para darte. Nos encantar&aacute; compartir este momento contigo.</p>
-        <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="cta-band" id="cta-band-btn">
+        <button class="btn btn-primary btn-xl" type="button" onclick="openModal()" id="cta-band-btn">
             &#127903; Reservar mi lugar gratuitamente
         </button>
-        <p style="margin-top:0.8rem;font-size:0.82rem;color:rgba(255,255,255,0.5);">Clase gratuita &middot; Jueves 30 de julio &middot; Online y en vivo</p>
+        <p class="cta-band-note">Clase gratuita &middot; Jueves 30 de julio &middot; Online y en vivo</p>
     </div>
 </section>
 
 <!-- ======== FOR YOU ======== -->
 <section class="for-you-section section-pad" id="for-you">
     <div class="container">
-        <div class="scroll-animate text-center" style="margin-bottom:0.5rem;">
+        <div class="text-center" style="margin-bottom:0.5rem;">
             <span class="section-label">&iquest;Es para m&iacute;?</span>
             <h2 class="section-title">Esta clase es para ti <em>si</em>...</h2>
         </div>
-        <div class="for-you-cards scroll-animate delay-1">
+        <div class="for-you-cards">
             <div class="for-you-item">
                 <div class="for-you-check">&#10004;</div>
                 <p class="for-you-text">Hace poco recibiste un diagn&oacute;stico de Autismo, TDAH u otra condici&oacute;n de neurodivergencia en alguien cercano y sientes que todav&iacute;a hay <strong>muchas preguntas sin responder</strong>.</p>
@@ -391,16 +462,14 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
 <!-- ======== CLOSING ======== -->
 <section class="closing-section section-pad" id="closing">
     <div class="container text-center">
-        <div class="scroll-animate">
-            <span class="section-label">Un &uacute;ltimo paso</span>
-            <h2 class="section-title">Reserva tu lugar</h2>
-            <p class="section-lead">
-                Cada d&iacute;a, m&aacute;s familias buscan respuestas, pero muy pocas encuentran un espacio donde tambi&eacute;n se sientan comprendidas.<br><br>
-                Si esta clase eson&oacute; contigo, nos encantar&aacute; compartir este momento contigo.
-            </p>
-        </div>
-        <div class="scroll-animate delay-1" style="margin-top:2.5rem;">
-            <button class="btn btn-primary btn-xl" type="button" data-modal-trigger="closing" id="closing-cta-btn">
+        <span class="section-label">Un &uacute;ltimo paso</span>
+        <h2 class="section-title">Reserva tu lugar</h2>
+        <p class="section-lead">
+            Cada d&iacute;a, m&aacute;s familias buscan respuestas, pero muy pocas encuentran un espacio donde tambi&eacute;n se sientan comprendidas.<br><br>
+            Si esta clase reson&oacute; contigo, nos encantar&aacute; compartir este momento contigo.
+        </p>
+        <div style="margin-top:2.5rem;">
+            <button class="btn btn-primary btn-xl" type="button" onclick="openModal()" id="closing-cta-btn">
                 &#127881; Quiero participar en la clase gratuita
             </button>
             <p class="btn-subtext">Jueves 30 de julio &middot; Sin costo &middot; Online y en vivo</p>
@@ -416,75 +485,104 @@ button{font-family:inherit;border:none;background:none;cursor:pointer}
     <p style="margin-top:0.8rem;">&copy; 2026 Sostener-nos &middot; Luz Ayda Mar&iacute;n &amp; Mauricio Mart&iacute;nez</p>
 </footer>
 
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 <script>
-const modal = document.getElementById('registerModal');
-const modalCard = modal.querySelector('.modal-card');
-const firstModalInput = modal.querySelector('iframe');
+// ── Modal ──────────────────────────────────────────────
+var modal = document.getElementById('registerModal');
+var formLoaded = false;
 
-function openModal(src){
+function openModal() {
     modal.classList.add('open');
-    modal.setAttribute('aria-hidden','false');
-    document.body.style.overflow='hidden';
-    if(modalCard) modalCard.scrollTop = 0;
-    setTimeout(function(){ if(firstModalInput) firstModalInput.focus(); }, 50);
+    document.body.style.overflow = 'hidden';
+    // Load form only on first open
+    if (!formLoaded) {
+        loadForm();
+    }
 }
 
-function closeModal(){
+function closeModal() {
     modal.classList.remove('open');
-    modal.setAttribute('aria-hidden','true');
-    document.body.style.overflow='';
+    document.body.style.overflow = '';
 }
 
-document.addEventListener('click',function(e){
-    const trigger = e.target.closest('[data-modal-trigger]');
-    if(!trigger) return;
-    e.preventDefault();
-    e.stopPropagation();
-    openModal(trigger.getAttribute('data-modal-trigger') || 'cta');
-}, true);
+function loadForm() {
+    formLoaded = true;
+    var container = document.getElementById('modal-form-container');
+    var loadingMsg = document.getElementById('form-loading-msg');
+    if (loadingMsg) loadingMsg.textContent = 'Cargando formulario de registro...';
 
-document.addEventListener('click',function(e){
-    if(e.target.closest('[data-modal-close]')) closeModal();
+    // Load LeadConnector script first, then inject iframe
+    var script = document.createElement('script');
+    script.src = 'https://link.msgsndr.com/js/form_embed.js';
+    script.onload = function() {
+        injectIframe(container);
+    };
+    script.onerror = function() {
+        // Fallback: inject iframe directly even if script fails
+        injectIframe(container);
+    };
+    document.body.appendChild(script);
+}
+
+function injectIframe(container) {
+    container.innerHTML = '';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://api.leadconnectorhq.com/widget/form/SW2pzQCpcwySpwXo4j51';
+    iframe.style.cssText = 'width:100%;min-height:720px;border:none;border-radius:4px;display:block;';
+    iframe.id = 'lc-form-SW2pzQCpcwySpwXo4j51';
+    iframe.setAttribute('data-layout', "{'id':'INLINE'}");
+    iframe.setAttribute('data-trigger-type', 'alwaysShow');
+    iframe.setAttribute('data-trigger-value', '');
+    iframe.setAttribute('data-activation-type', 'alwaysActivated');
+    iframe.setAttribute('data-activation-value', '');
+    iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
+    iframe.setAttribute('data-deactivation-value', '');
+    iframe.setAttribute('data-form-name', 'Form Capatacion 1 clase 30 julio');
+    iframe.setAttribute('data-height', '720');
+    iframe.setAttribute('data-layout-iframe-id', 'lc-form-SW2pzQCpcwySpwXo4j51');
+    iframe.setAttribute('data-form-id', 'SW2pzQCpcwySpwXo4j51');
+    iframe.title = 'Form Capatacion 1 clase 30 julio';
+    container.appendChild(iframe);
+}
+
+// Close on overlay click
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
 });
 
-modal.addEventListener('click',function(e){ if(e.target===modal) closeModal(); });
-document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&modal.classList.contains('open')) closeModal(); });
-
-const stickyBar = document.getElementById('stickyBar');
-const heroSection = document.getElementById('hero');
-const stickyObs = new IntersectionObserver(function(entries){
-    entries.forEach(entry=>{ stickyBar.classList.toggle('visible', !entry.isIntersecting); });
-},{threshold:0.1});
-stickyObs.observe(heroSection);
-
-const scrollObs = new IntersectionObserver(function(entries){
-    entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('animated'); });
-},{threshold:0});
-document.querySelectorAll('.scroll-animate').forEach(el=>scrollObs.observe(el));
-
-// Activate any elements already in view on load
-document.querySelectorAll('.scroll-animate').forEach(function(el){
-    var r = el.getBoundingClientRect();
-    if(r.top < window.innerHeight) el.classList.add('animated');
+// Close on Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
 });
 
-let exitShown = false;
-document.addEventListener('mouseleave',function(e){
-    if(e.clientY<10 && !exitShown && !modal.classList.contains('open')){
+// ── Sticky bar ────────────────────────────────────────
+var stickyBar = document.getElementById('stickyBar');
+var heroSection = document.getElementById('hero');
+if (window.IntersectionObserver) {
+    new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            stickyBar.classList.toggle('visible', !entry.isIntersecting);
+        });
+    }, { threshold: 0.1 }).observe(heroSection);
+}
+
+// ── Exit intent (desktop only) ───────────────────────
+var exitShown = false;
+document.addEventListener('mouseleave', function(e) {
+    if (e.clientY < 5 && !exitShown && !modal.classList.contains('open')) {
         exitShown = true;
-        setTimeout(()=>openModal('exit'),400);
+        setTimeout(openModal, 400);
     }
 });
 
-const progressBar = document.createElement('div');
-progressBar.style.cssText = 'position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#C27A5A,#9A8FB4);z-index:9999;transition:width 0.1s linear;width:0%;pointer-events:none;';
-document.body.appendChild(progressBar);
-window.addEventListener('scroll',function(){
-    const s = window.scrollY;
-    const d = document.documentElement.scrollHeight - window.innerHeight;
-    progressBar.style.width = (d > 0 ? (s/d*100) : 0) + '%';
-});
+// ── Scroll progress bar ───────────────────────────────
+var bar = document.createElement('div');
+bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#C27A5A,#9A8FB4);z-index:9999;width:0%;pointer-events:none;';
+document.body.appendChild(bar);
+window.addEventListener('scroll', function() {
+    var s = window.scrollY;
+    var d = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (d > 0 ? (s / d * 100) : 0) + '%';
+}, { passive: true });
 </script>
 </body>
 </html>
