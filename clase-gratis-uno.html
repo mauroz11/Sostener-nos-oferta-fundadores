@@ -9,6 +9,7 @@
     <meta property="og:description" content="Una clase gratuita para familias de personas neurodivergentes. Jueves 30 de julio — Online y en vivo.">
     <title>Clase Online Gratuita | Lo que nadie les explica a las familias — Sostener-nos</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <script async src="https://link.msgsndr.com/js/form_embed.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
@@ -69,7 +70,7 @@ img { max-width: 100%; display: block; }
     color: var(--c-white);
     box-shadow: 0 4px 16px rgba(194,122,90,0.35);
 }
-.btn-subtext { display: block; font-size: 0.78rem; font-weight: 400; color: var(--c-carbon-2); margin-top: 0.6rem; text-align: center; font-style: italic; }
+.btn-subtext { display: block; font-size: 0.78rem; font-weight: 400; color: var(--c-carbon-2); margin-top: 0.6rem; text-align: center; font-style: italic; pointer-events: none; }
 
 /* ── Sticky bar ── */
 .sticky-bar {
@@ -87,11 +88,9 @@ img { max-width: 100%; display: block; }
 .modal-overlay {
     position: fixed; inset: 0; z-index: 9000;
     background: rgba(60,58,54,0.75);
-    display: flex; align-items: center; justify-content: center; padding: 1rem;
-    visibility: hidden; opacity: 0;
-    transition: opacity 0.25s ease, visibility 0.25s ease;
+    display: none; align-items: center; justify-content: center; padding: 1rem;
 }
-.modal-overlay.open { visibility: visible; opacity: 1; }
+.modal-overlay.open { display: flex; }
 .modal-card {
     background: var(--c-white); border-radius: 20px;
     max-width: 580px; width: 100%; max-height: 90vh;
@@ -493,34 +492,16 @@ var formLoaded = false;
 function openModal() {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
-    // Load form only on first open
     if (!formLoaded) {
-        loadForm();
+        formLoaded = true;
+        var container = document.getElementById('modal-form-container');
+        injectIframe(container);
     }
 }
 
 function closeModal() {
     modal.classList.remove('open');
     document.body.style.overflow = '';
-}
-
-function loadForm() {
-    formLoaded = true;
-    var container = document.getElementById('modal-form-container');
-    var loadingMsg = document.getElementById('form-loading-msg');
-    if (loadingMsg) loadingMsg.textContent = 'Cargando formulario de registro...';
-
-    // Load LeadConnector script first, then inject iframe
-    var script = document.createElement('script');
-    script.src = 'https://link.msgsndr.com/js/form_embed.js';
-    script.onload = function() {
-        injectIframe(container);
-    };
-    script.onerror = function() {
-        // Fallback: inject iframe directly even if script fails
-        injectIframe(container);
-    };
-    document.body.appendChild(script);
 }
 
 function injectIframe(container) {
