@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accede a la comunidad Sostener-nos y elige el plan que mejor se adapte a este momento de tu vida. Comunidad de apoyo para familias neurodivergentes.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Planes Sostener-nos — Elige tu acceso a la comunidad">
+    <meta property="og:description" content="Accede a la comunidad Sostener-nos. Planes mensual, trimestral y acceso vitalicio para familias de personas neurodivergentes.">
+    <title>Planes Sostener-nos — Comunidad de Apoyo para Familias Neurodivergentes</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <style>
+/* ── Variables ── */
+:root {
+    --c-terra:       #C27A5A;
+    --c-terra-lt:    #F9EFEA;
+    --c-beige:       #E7BFA3;
+    --c-sage:        #B9C6A1;
+    --c-sage-lt:     #F3F5EF;
+    --c-lavender:    #9A8FB4;
+    --c-lavender-lt: #F4F1F8;
+    --c-arena:       #DAD1C2;
+    --c-arena-lt:    #F6F4F0;
+    --c-carbon:      #3C3A36;
+    --c-carbon-2:    #5A5752;
+    --c-bg:          #FAF7F2;
+    --c-white:       #FFFFFF;
+    --c-wa:          #25D366;
+    --c-wa-lt:       #E8FBF0;
+    --f-title:  'DM Serif Display', Georgia, serif;
+    --f-body:   'Poppins', system-ui, sans-serif;
+    --f-hand:   'Caveat', cursive;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+    font-family: var(--f-body); font-weight: 300; line-height: 1.7;
+    color: var(--c-carbon); background: var(--c-bg); overflow-x: hidden;
+}
+a   { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ── Layout ── */
+.container { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+.text-center { text-align: center; }
+
+/* ── Buttons — plain, no transitions, no transforms ── */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    font-family: var(--f-body); font-weight: 600; border-radius: 50px; border: none;
+    cursor: pointer; line-height: 1.3; text-decoration: none;
+    -webkit-tap-highlight-color: transparent; touch-action:manipulation;
+    user-select: none; -webkit-user-select: none;
+}
+.btn-lg  { padding: 1.1rem 2.6rem; font-size: 1.05rem; }
+.btn-md  { padding: 0.9rem 2rem;   font-size: 0.97rem; }
+.btn-sm  { padding: 0.7rem 1.6rem; font-size: 0.88rem; }
+
+.btn-terra    { background: var(--c-terra);    color: var(--c-white); box-shadow: 0 4px 16px rgba(194,122,90,0.35); }
+.btn-lavender { background: var(--c-lavender); color: var(--c-white); box-shadow: 0 4px 16px rgba(154,143,180,0.35); }
+.btn-carbon   { background: var(--c-carbon);   color: var(--c-white); box-shadow: 0 4px 16px rgba(60,58,54,0.3); }
+.btn-wa       { background: var(--c-wa);       color: var(--c-white); box-shadow: 0 4px 14px rgba(37,211,102,0.35); }
+.btn-outline  {
+    background: var(--c-white); color: var(--c-terra);
+    border: 2px solid var(--c-terra);
+}
+
+/* ── Logo in hero ── */
+.logo-wrap { display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+.logo-img  { height: 140px; width: auto; }
+
+/* ── Hero ── */
+.hero {
+    padding: 5rem 0 4rem;
+    background: var(--c-bg);
+    text-align: center;
+}
+.hero-eyebrow {
+    display: inline-block;
+    font-family: var(--f-hand); font-size: 1.3rem; color: var(--c-terra);
+    margin-bottom: 1rem;
+}
+.hero-title {
+    font-family: var(--f-title);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15; color: var(--c-carbon);
+    font-weight: 400; margin-bottom: 1rem;
+}
+.hero-title em { font-style: italic; color: var(--c-terra); }
+.hero-lead {
+    font-size: clamp(1rem, 2.5vw, 1.12rem);
+    color: var(--c-carbon-2); max-width: 520px;
+    margin: 0 auto; font-weight: 300; line-height: 1.75;
+}
+
+/* ── Divider ── */
+.divider {
+    border: none; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--c-arena), transparent);
+    margin: 0;
+}
+
+/* ── Plans grid ── */
+.plans-section { padding: 4.5rem 0 5rem; background: var(--c-white); }
+.plans-label {
+    font-family: var(--f-hand); font-size: 1.3rem; color: var(--c-terra);
+    display: block; margin-bottom: 0.5rem;
+}
+.plans-title {
+    font-family: var(--f-title); font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+    color: var(--c-carbon); margin-bottom: 3rem; line-height: 1.25;
+}
+.plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+/* ── Plan card ── */
+.plan-card {
+    background: var(--c-bg);
+    border-radius: 20px;
+    border: 1.5px solid rgba(218,209,194,0.6);
+    padding: 2rem 1.6rem 2rem;
+    display: flex; flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+.plan-card.featured {
+    background: var(--c-white);
+    border-color: var(--c-terra);
+    box-shadow: 0 8px 32px rgba(194,122,90,0.15);
+}
+.plan-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--c-terra); color: var(--c-white);
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.8px;
+    text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 20px;
+    white-space: nowrap;
+}
+.plan-period {
+    font-family: var(--f-hand); font-size: 1.1rem; color: var(--c-carbon-2);
+    margin-bottom: 0.5rem; display: block;
+}
+.plan-name {
+    font-family: var(--f-title); font-size: 1.4rem; color: var(--c-carbon);
+    margin-bottom: 0.75rem; line-height: 1.2;
+}
+.plan-price {
+    margin-bottom: 1.5rem;
+}
+.plan-amount {
+    font-family: var(--f-title); font-size: 2.4rem; color: var(--c-terra);
+    line-height: 1; display: block;
+}
+.plan-currency {
+    font-size: 1rem; color: var(--c-carbon-2); font-weight: 500;
+    display: block; margin-top: 0.2rem;
+}
+.plan-note {
+    font-size: 0.78rem; color: var(--c-carbon-2); margin-bottom: 1.5rem;
+    flex: 1;
+}
+.plan-divider {
+    border: none; height: 1px;
+    background: rgba(218,209,194,0.5);
+    margin: 0 0 1.5rem;
+}
+
+/* ── Vitalicio card special ── */
+.plan-card.vitalicio {
+    background: linear-gradient(160deg, var(--c-carbon) 0%, #2A2926 100%);
+    border-color: transparent;
+    color: var(--c-white);
+}
+.plan-card.vitalicio .plan-period { color: var(--c-beige); }
+.plan-card.vitalicio .plan-name   { color: var(--c-white); }
+.plan-card.vitalicio .plan-amount { color: var(--c-beige); }
+.plan-card.vitalicio .plan-currency { color: rgba(255,255,255,0.6); }
+.plan-card.vitalicio .plan-note   { color: rgba(255,255,255,0.65); }
+.plan-card.vitalicio .plan-divider { background: rgba(255,255,255,0.15); }
+.plan-card.vitalicio .plan-badge  { background: var(--c-beige); color: var(--c-carbon); }
+
+/* ── Support section ── */
+.support-section {
+    padding: 4rem 0;
+    background: var(--c-bg);
+    text-align: center;
+}
+.support-inner {
+    background: var(--c-white);
+    border-radius: 20px;
+    border: 1px solid rgba(218,209,194,0.5);
+    padding: 2.5rem 2rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.support-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+.support-title {
+    font-family: var(--f-title); font-size: 1.4rem; color: var(--c-carbon);
+    margin-bottom: 0.6rem;
+}
+.support-lead { font-size: 0.96rem; color: var(--c-carbon-2); margin-bottom: 1.5rem; line-height: 1.7; }
+.support-number {
+    font-size: 1rem; font-weight: 600; color: var(--c-carbon); margin-bottom: 1.5rem;
+}
+
+/* ── Footer ── */
+footer {
+    background: var(--c-carbon); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 2rem 1.5rem; font-size: 0.82rem;
+}
+footer .f-brand { font-family: var(--f-hand); font-size: 1.4rem; color: var(--c-beige); margin-bottom: 0.3rem; }
+
+/* ── Mobile ── */
+@media (max-width: 760px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .hero { padding: 3.5rem 0 3rem; }
+    .plans-section { padding: 3.5rem 0 4rem; }
+}
+@media (min-width: 761px) and (max-width: 960px) {
+    .plans-grid { grid-template-columns: 1fr 1fr; }
+    .plan-card.vitalicio { grid-column: 1 / -1; max-width: 380px; margin: 0 auto; }
+}
+    </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+    <div class="container">
+        <div class="logo-wrap">
+            <img class="logo-img" src="assets/logo.png" alt="Sostener-nos — Comunidad de Apoyo para Familias Neurodivergentes">
+        </div>
+        <span class="hero-eyebrow">Comunidad Sostener-nos</span>
+        <h1 class="hero-title">
+            Hoy puedes dar el<br><em>siguiente paso</em>
+        </h1>
+        <p class="hero-lead">
+            Accede a la comunidad Sostener-nos y elige el plan que mejor se adapte a este momento de tu vida.
+        </p>
+    </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ PLANS ══ -->
+<section class="plans-section">
+    <div class="container text-center">
+
+        <span class="plans-label">Elige tu plan</span>
+        <h2 class="plans-title">Un espacio donde ya no tienes<br>que sostener esto a solas</h2>
+
+        <div class="plans-grid">
+
+            <!-- Mensual -->
+            <div class="plan-card">
+                <span class="plan-period">Plan</span>
+                <h3 class="plan-name">Mensual</h3>
+                <div class="plan-price">
+                    <span class="plan-amount">$37</span>
+                    <span class="plan-currency">USD / mes</span>
+                </div>
+                <hr class="plan-divider">
+                <p class="plan-note">Acceso completo a la comunidad. Renueva cada mes con total flexibilidad.</p>
+                <a  class="btn btn-terra btn-md"
+                    href="https://pay.hotmart.com/J104287874G?off=i9q2cnj9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="plan-mensual-btn">
+                    Elegir plan mensual
+                </a>
+            </div>
+
+            <!-- Trimestral (featured) -->
+            <div class="plan-card featured">
+                <span class="plan-badge">Más elegido</span>
+                <span class="plan-period">Plan</span>
+                <h3 class="plan-name">Trimestral</h3>
+                <div class="plan-price">
+                    <span class="plan-amount">$97</span>
+                    <span class="plan-currency">USD / 3 meses</span>
+                </div>
+                <hr class="plan-divider">
+                <p class="plan-note">Acceso completo durante tres meses. Mayor continuidad, mayor transformación.</p>
+                <a  class="btn btn-terra btn-md"
+                    href="https://pay.hotmart.com/J104287874G?off=nb0zq7kp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="plan-trimestral-btn">
+                    Elegir plan trimestral
+                </a>
+            </div>
+
+            <!-- Vitalicio -->
+            <div class="plan-card vitalicio">
+                <span class="plan-badge">&#10024; Oferta Fundadores</span>
+                <span class="plan-period">Acceso</span>
+                <h3 class="plan-name">Vitalicio</h3>
+                <div class="plan-price">
+                    <span class="plan-amount">$347</span>
+                    <span class="plan-currency">USD · pago único</span>
+                </div>
+                <hr class="plan-divider">
+                <p class="plan-note">Acceso de por vida al precio especial de lanzamiento para Fundadores. Disponible por tiempo limitado.</p>
+                <a  class="btn btn-md"
+                    style="background:var(--c-beige);color:var(--c-carbon);box-shadow:0 4px 14px rgba(231,191,163,0.4);"
+                    href="https://pay.hotmart.com/S106717377O"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="plan-vitalicio-btn">
+                    &#127775; Quiero el acceso vitalicio
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SUPPORT ══ -->
+<section class="support-section">
+    <div class="container">
+        <div class="support-inner">
+            <div class="support-icon">&#128172;</div>
+            <h2 class="support-title">&iquest;Tienes alguna pregunta<br>antes de unirte?</h2>
+            <p class="support-lead">Estamos aqu&iacute; para ayudarte. Si tienes dudas sobre los planes o quieres saber si la comunidad es para ti, escr&iacute;benos directamente.</p>
+            <p class="support-number">&#128241; +57 318 650 6819</p>
+            <a  class="btn btn-wa btn-md"
+                href="https://wa.me/573186506819?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20los%20planes%20de%20la%20comunidad%20Sostener-nos"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="support-wa-btn">
+                &#128242; Escribir al WhatsApp de soporte
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <p class="f-brand">Sostener-nos</p>
+    <p>Comunidad de Apoyo para Familias Neurodivergentes</p>
+    <p style="margin-top:0.5rem;">&copy; 2026 Sostener-nos &middot; Luz Ayda Mar&iacute;n &amp; Mauricio Mart&iacute;nez</p>
+</footer>
+
+</body>
+</html>
